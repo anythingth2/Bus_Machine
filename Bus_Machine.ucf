@@ -1,0 +1,27 @@
+
+
+NET "posButton[9]" LOC = P23;
+NET "posButton[8]" LOC = P21;
+NET "posButton[7]" LOC = P16;
+NET "posButton[6]" LOC = P14;
+NET "posButton[5]" LOC = P11;
+NET "posButton[4]" LOC = P9;
+NET "posButton[3]" LOC = P7;
+NET "posButton[2]" LOC = P5;
+NET "posButton[1]" LOC = P24;
+NET "posButton[0]" LOC = P22;
+
+NET "rgbCommon[0]" LOC = P17;
+NET "rgbCommon[1]" LOC = P15;
+NET "rgbCommon[2]" LOC = P12;
+NET "rgbCommon[3]" LOC = P10;
+NET "rgbCommon[4]" LOC = P8;
+NET "rgbCommon[5]" LOC = P6;
+NET "rgbCommon[6]" LOC = P1;
+NET "rgbCommon[7]" LOC = P142;
+NET "rgbCommon[8]" LOC = P140;
+NET "rgbCommon[9]" LOC = P138;
+
+NET "rgb[2]" LOC = P141;
+NET "rgb[1]" LOC = P2;
+NET "rgb[0]" LOC = P143;

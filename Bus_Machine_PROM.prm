@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\Xilinx\14.7\ISE_DS\//Bus_Machine_PROM.mcs -x xcf04s -u 00000000 C:/Users/ChiChaChai/Documents/CE-KMITL/AdvDigital/Bus_Machine/bus_machine.bit 
+
+PROM C:\Xilinx\14.7\ISE_DS\Bus_Machine_PROM.prm map: Fri May 18 18:36:08 2018
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          512K
+PROM start    0000:0000
+PROM end      0007:ffff
+PROM checksum 02cf1086
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:327b     May 18 18:15:19 2018 C:/Users/ChiChaChai/Documents/CE-KMITL/AdvDigital/Bus_Machine/bus_machine.bit

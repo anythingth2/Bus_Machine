@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\ChiChaChai\Documents\CE-KMITL\AdvDigital\Bus_Machine\Bus_Machine.ncd
+OUTFILE=C:\Users\ChiChaChai\Documents\CE-KMITL\AdvDigital\Bus_Machine\Bus_Machine.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Users\ChiChaChai\Documents\CE-KMITL\AdvDigital\Bus_Machine
+LICENSE=WebPack
+USER_INFO=211436466_0_0_234

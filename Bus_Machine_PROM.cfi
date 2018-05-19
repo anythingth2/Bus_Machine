@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            05/18/2018 - 18:36
+SOURCE          C:\Xilinx\14.7\ISE_DS\Bus_Machine_PROM.mcs
+DEVICE          XCF04S
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x02CF1086
+START_ADDRESS   0x00000000 END_ADDRESS 0x0005327B DIRECTION_UP   "C:/Users/ChiChaChai/Documents/CE-KMITL/AdvDigital/Bus_Machine/bus_machine.bit" 6slx9tqg144
