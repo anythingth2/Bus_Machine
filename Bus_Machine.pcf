@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun May 20 18:51:56 2018
+// Written by: Map P.20131013 on Sun May 20 19:03:22 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -13,9 +13,9 @@ COMP "clk" LOCATE = SITE "P123" LEVEL 1;
 COMP "rgbCommon<6>" LOCATE = SITE "P1" LEVEL 1;
 COMP "rgb<0>" LOCATE = SITE "P143" LEVEL 1;
 COMP "rgbCommon<7>" LOCATE = SITE "P142" LEVEL 1;
-COMP "rgb<1>" LOCATE = SITE "P2" LEVEL 1;
+COMP "rgb<1>" LOCATE = SITE "P141" LEVEL 1;
 COMP "rgbCommon<8>" LOCATE = SITE "P140" LEVEL 1;
-COMP "rgb<2>" LOCATE = SITE "P141" LEVEL 1;
+COMP "rgb<2>" LOCATE = SITE "P2" LEVEL 1;
 COMP "rgbCommon<9>" LOCATE = SITE "P138" LEVEL 1;
 COMP "posButton<0>" LOCATE = SITE "P22" LEVEL 1;
 COMP "posButton<1>" LOCATE = SITE "P24" LEVEL 1;

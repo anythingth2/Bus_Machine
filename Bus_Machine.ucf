@@ -22,8 +22,8 @@ NET "rgbCommon[7]" LOC = P142;
 NET "rgbCommon[8]" LOC = P140;
 NET "rgbCommon[9]" LOC = P138;
 
-NET "rgb[2]" LOC = P141;
-NET "rgb[1]" LOC = P2;
+NET "rgb[2]" LOC = P2;
+NET "rgb[1]" LOC = P141;
 NET "rgb[0]" LOC = P143;
 
 NET "clk" LOC = P123;

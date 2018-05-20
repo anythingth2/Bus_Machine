@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-CHICHACHAI::  Sun May 20 18:51:59 2018
+CHICHACHAI::  Sun May 20 19:03:25 2018
 
 par -w -intstyle ise -ol high -mt off Bus_Machine_map.ncd Bus_Machine.ncd
 Bus_Machine.pcf 

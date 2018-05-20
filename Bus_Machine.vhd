@@ -72,8 +72,6 @@ begin
 				rgbIndex <= 0;
 			end if;
 			
-			
-			
 			if (rgbPos(rgbIndex) = '1')then 
 				rgb <= "010";
 			else
@@ -83,17 +81,6 @@ begin
 			
 		end if;
 		
-	--	for i in rgbCommon'low to rgbCommon'high loop
-
-			
-	--		if (rgbPos(i) = '1') then
-	--			rgb<= "100";
-	--		else
-	--			rgb <= "001";
-	--		end if;
-			
-	--		rgbCommon(i) <= '0';
-	--	end loop;
 	end process;
 	
 	

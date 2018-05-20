@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sun May 20 18:52:03 2018
+Sun May 20 19:03:29 2018
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -20,7 +20,7 @@ Pinout by Pin Number:
 -----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 Pin Number|Signal Name|Pin Usage|Pin Name|Direction|IO Standard|IO Bank Number|Drive (mA)|Slew Rate|Termination|IOB Delay|Voltage|Constraint|IO Register|Signal Integrity|
 P1|rgbCommon<6>|IOB|IO_L83N_VREF_3|OUTPUT|LVCMOS25*|3|12|SLOW||||LOCATED|NO|NONE|
-P2|rgb<1>|IOB|IO_L83P_3|OUTPUT|LVCMOS25*|3|12|SLOW||||LOCATED|NO|NONE|
+P2|rgb<2>|IOB|IO_L83P_3|OUTPUT|LVCMOS25*|3|12|SLOW||||LOCATED|NO|NONE|
 P3|||GND||||||||||||
 P4|||VCCO_3|||3|||||2.50||||
 P5|posButton<2>|IOB|IO_L52N_3|INPUT|LVCMOS25*|3||||NONE||LOCATED|NO|NONE|
@@ -159,7 +159,7 @@ P137||IOBS|IO_L4N_0|UNUSED||0|||||||||
 P138|rgbCommon<9>|IOB|IO_L4P_0|OUTPUT|LVCMOS25*|0|12|SLOW||||LOCATED|NO|NONE|
 P139||IOBS|IO_L3N_0|UNUSED||0|||||||||
 P140|rgbCommon<8>|IOB|IO_L3P_0|OUTPUT|LVCMOS25*|0|12|SLOW||||LOCATED|NO|NONE|
-P141|rgb<2>|IOB|IO_L2N_0|OUTPUT|LVCMOS25*|0|12|SLOW||||LOCATED|NO|NONE|
+P141|rgb<1>|IOB|IO_L2N_0|OUTPUT|LVCMOS25*|0|12|SLOW||||LOCATED|NO|NONE|
 P142|rgbCommon<7>|IOB|IO_L2P_0|OUTPUT|LVCMOS25*|0|12|SLOW||||LOCATED|NO|NONE|
 P143|rgb<0>|IOB|IO_L1N_VREF_0|OUTPUT|LVCMOS25*|0|12|SLOW||||LOCATED|NO|NONE|
 P144||IOBM|IO_L1P_HSWAPEN_0|UNUSED||0|||||||||
