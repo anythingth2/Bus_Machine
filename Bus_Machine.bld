@@ -29,7 +29,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 223836 kilobytes
+Total memory usage is 223844 kilobytes
 
 Writing NGD file "Bus_Machine.ngd" ...
 Total REAL time to NGDBUILD completion:  3 sec

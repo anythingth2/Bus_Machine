@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-05-19T20:31:57</DateModified>
+  <DateModified>2018-05-20T17:03:16</DateModified>
   <ModuleName>Bus_Machine</ModuleName>
-  <SummaryTimeStamp>2018-05-19T15:54:54</SummaryTimeStamp>
+  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/ChiChaChai/Documents/CE-KMITL/AdvDigital/Bus_Machine/iseconfig/Bus_Machine.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/ChiChaChai/Documents/CE-KMITL/AdvDigital/Bus_Machine\</ImplementationReportsDirectory>
-  <DateInitialized>2018-05-18T18:08:36</DateInitialized>
+  <ImplementationReportsDirectory>C:/Users/ChiChaChai/Documents/CE-KMITL/AdvDigital/Bus_Machine</ImplementationReportsDirectory>
+  <DateInitialized>2018-05-20T17:03:16</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    20:27:09 05/19/2018 
+-- Create Date:    13:18:26 05/20/2018 
 -- Design Name: 
 -- Module Name:    Clock_Counter - Behavioral 
 -- Project Name: 
@@ -30,15 +30,31 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Clock_Counter is
+	generic(
+		N : integer
+	);
 	port(
-		
+		clock : in std_logic;
+		trigger : out std_logic
 	);
 end Clock_Counter;
 
 architecture Behavioral of Clock_Counter is
-
+	signal c : integer range (0) to (50000000);
 begin
 
+	process(clock)
+	begin
+		if (clock'event and clock = '1') then
+			c<= c+1;
+			if ( c < N )then
+				trigger <= '0';
+			else
+				trigger <= '1';
+				c <= 0;
+			end if;			
+		end if;
+	end process;
 
 end Behavioral;
 

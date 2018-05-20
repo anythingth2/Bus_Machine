@@ -32,31 +32,23 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Pad to Pad
----------------+---------------+---------+
-Source Pad     |Destination Pad|  Delay  |
----------------+---------------+---------+
-posButton<0>   |rgbCommon<0>   |    5.580|
-posButton<1>   |rgbCommon<1>   |    5.871|
-posButton<2>   |rgbCommon<2>   |    5.595|
-posButton<3>   |rgbCommon<3>   |    5.442|
-posButton<4>   |rgbCommon<4>   |    5.305|
-posButton<5>   |rgbCommon<5>   |    5.535|
-posButton<6>   |rgbCommon<6>   |    6.799|
-posButton<7>   |rgbCommon<7>   |    7.153|
-posButton<8>   |rgbCommon<8>   |    7.333|
-posButton<9>   |rgbCommon<9>   |    7.604|
----------------+---------------+---------+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.381|         |         |         |
+---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sun May 20 00:45:05 2018 
+Analysis completed Sun May 20 18:52:08 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 259 MB
+Peak Memory Usage: 275 MB
 
 
 

@@ -1,1 +1,2 @@
+vhdl work "Clock_Counter.vhd"
 vhdl work "Bus_Machine.vhd"

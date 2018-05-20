@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: Bus_Machine.prj
 
@@ -105,6 +105,9 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Parsing VHDL file "C:\Users\ChiChaChai\Documents\CE-KMITL\AdvDigital\Bus_Machine\Clock_Counter.vhd" into library work
+Parsing entity <Clock_Counter>.
+Parsing architecture <Behavioral> of entity <clock_counter>.
 Parsing VHDL file "C:\Users\ChiChaChai\Documents\CE-KMITL\AdvDigital\Bus_Machine\Bus_Machine.vhd" into library work
 Parsing entity <Bus_Machine>.
 Parsing architecture <Behavioral> of entity <bus_machine>.
@@ -113,7 +116,9 @@ Parsing architecture <Behavioral> of entity <bus_machine>.
 *                            HDL Elaboration                            *
 =========================================================================
 
-Elaborating entity <Bus_Machine> (architecture <Behavioral>) from library <work>.
+Elaborating entity <Bus_Machine> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <Clock_Counter> (architecture <Behavioral>) with generics from library <work>.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -121,43 +126,122 @@ Elaborating entity <Bus_Machine> (architecture <Behavioral>) from library <work>
 
 Synthesizing Unit <Bus_Machine>.
     Related source file is "C:\Users\ChiChaChai\Documents\CE-KMITL\AdvDigital\Bus_Machine\Bus_Machine.vhd".
+        rgbNclock = 10
+WARNING:Xst:647 - Input <posButton> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <rgbIndex>.
+    Found 3-bit register for signal <rgb>.
+    Found 10-bit register for signal <rgbCommon>.
+    Found 4-bit adder for signal <rgbIndex[3]_GND_4_o_add_3_OUT> created at line 70.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_2_OUT<3:0>> created at line 69.
+    Found 16x1-bit Read Only RAM for signal <rgbIndex[3]_X_4_o_Mux_6_o>
     Summary:
-	no macro.
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred  20 Multiplexer(s).
 Unit <Bus_Machine> synthesized.
+
+Synthesizing Unit <Clock_Counter>.
+    Related source file is "C:\Users\ChiChaChai\Documents\CE-KMITL\AdvDigital\Bus_Machine\Clock_Counter.vhd".
+        N = 10
+    Found 1-bit register for signal <trigger>.
+    Found 26-bit register for signal <c>.
+    Found 26-bit adder for signal <c[25]_GND_5_o_add_0_OUT> created at line 49.
+    Found 26-bit comparator greater for signal <c[25]_GND_5_o_LessThan_2_o> created at line 50
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Clock_Counter> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# RAMs                                                 : 1
+ 16x1-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 3
+ 26-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 1
+# Registers                                            : 5
+ 1-bit register                                        : 1
+ 10-bit register                                       : 1
+ 26-bit register                                       : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+# Comparators                                          : 1
+ 26-bit comparator greater                             : 1
+# Multiplexers                                         : 20
+ 1-bit 2-to-1 multiplexer                              : 20
+
 =========================================================================
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1710 - FF/Latch <rgb_0> (without init value) has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <Bus_Machine>.
+The following registers are absorbed into counter <rgbIndex>: 1 register on signal <rgbIndex>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_rgbIndex[3]_X_4_o_Mux_6_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 1-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <rgbIndex>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Bus_Machine> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Clock_Counter>.
+The following registers are absorbed into counter <c>: 1 register on signal <c>.
+Unit <Clock_Counter> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# RAMs                                                 : 1
+ 16x1-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 1
+ 4-bit subtractor                                      : 1
+# Counters                                             : 2
+ 26-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 14
+ Flip-Flops                                            : 14
+# Comparators                                          : 1
+ 26-bit comparator greater                             : 1
+# Multiplexers                                         : 20
+ 1-bit 2-to-1 multiplexer                              : 20
+
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1710 - FF/Latch <rgb_0> (without init value) has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <Bus_Machine> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Bus_Machine, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block Bus_Machine, actual ratio is 1.
 
 Final Macro Processing ...
 
 =========================================================================
 Final Register Report
 
-Found no macro
+Macro Statistics
+# Registers                                            : 43
+ Flip-Flops                                            : 43
+
 =========================================================================
 
 =========================================================================
@@ -179,11 +263,24 @@ Top Level Output File Name         : Bus_Machine.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2
+# BELS                             : 136
 #      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 25
+#      LUT2                        : 27
+#      LUT3                        : 1
+#      LUT4                        : 4
+#      LUT5                        : 19
+#      MUXCY                       : 30
 #      VCC                         : 1
-# IO Buffers                       : 23
-#      IBUF                        : 10
+#      XORCY                       : 26
+# FlipFlops/Latches                : 43
+#      FD                          : 37
+#      FDR                         : 5
+#      FDS                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
 #      OBUF                        : 13
 
 Device utilization summary:
@@ -193,19 +290,23 @@ Selected Device : 6slx9tqg144-3
 
 
 Slice Logic Utilization: 
+ Number of Slice Registers:              43  out of  11440     0%  
+ Number of Slice LUTs:                   78  out of   5720     1%  
+    Number used as Logic:                78  out of   5720     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      0
-   Number with an unused Flip Flop:       0  out of      0         
-   Number with an unused LUT:             0  out of      0         
-   Number of fully used LUT-FF pairs:     0  out of      0         
-   Number of unique control sets:         0
+ Number of LUT Flip Flop pairs used:     81
+   Number with an unused Flip Flop:      38  out of     81    46%  
+   Number with an unused LUT:             3  out of     81     3%  
+   Number of fully used LUT-FF pairs:    40  out of     81    49%  
+   Number of unique control sets:         4
 
 IO Utilization: 
- Number of IOs:                          23
- Number of bonded IOBs:                  23  out of    102    22%  
+ Number of IOs:                          24
+ Number of bonded IOBs:                  14  out of    102    13%  
 
 Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -225,7 +326,13 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-No clock signals found in this design
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+RGB_COUNTER/trigger                | NONE(rgbCommon_0)      | 16    |
+clk                                | BUFGP                  | 27    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -235,49 +342,116 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: No path found
+   Minimum period: 3.660ns (Maximum Frequency: 273.196MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
-   Maximum combinational path delay: 4.372ns
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: No path found
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 10 / 10
+Timing constraint: Default period analysis for Clock 'RGB_COUNTER/trigger'
+  Clock period: 2.951ns (frequency: 338.908MHz)
+  Total number of paths / destination ports: 84 / 20
 -------------------------------------------------------------------------
-Delay:               4.372ns (Levels of Logic = 2)
-  Source:            posButton<9> (PAD)
-  Destination:       rgbCommon<9> (PAD)
+Delay:               2.951ns (Levels of Logic = 1)
+  Source:            rgbIndex_2 (FF)
+  Destination:       rgbIndex_0 (FF)
+  Source Clock:      RGB_COUNTER/trigger rising
+  Destination Clock: RGB_COUNTER/trigger rising
 
-  Data Path: posButton<9> to rgbCommon<9>
+  Data Path: rgbIndex_2 to rgbIndex_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.579  posButton_9_IBUF (rgbCommon_9_OBUF)
+     FDR:C->Q             14   0.447   1.186  rgbIndex_2 (rgbIndex_2)
+     LUT4:I1->O            4   0.205   0.683  PWR_4_o_rgbIndex[3]_equal_5_o<3>1 (PWR_4_o_rgbIndex[3]_equal_5_o)
+     FDR:R                     0.430          rgbIndex_0
+    ----------------------------------------
+    Total                      2.951ns (1.082ns logic, 1.869ns route)
+                                       (36.7% logic, 63.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.660ns (frequency: 273.196MHz)
+  Total number of paths / destination ports: 1674 / 27
+-------------------------------------------------------------------------
+Delay:               3.660ns (Levels of Logic = 7)
+  Source:            RGB_COUNTER/c_2 (FF)
+  Destination:       RGB_COUNTER/c_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: RGB_COUNTER/c_2 to RGB_COUNTER/c_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.995  RGB_COUNTER/c_2 (RGB_COUNTER/c_2)
+     LUT5:I0->O            1   0.203   0.000  RGB_COUNTER/Mcompar_c[25]_GND_5_o_LessThan_2_o_lut<0> (RGB_COUNTER/Mcompar_c[25]_GND_5_o_LessThan_2_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  RGB_COUNTER/Mcompar_c[25]_GND_5_o_LessThan_2_o_cy<0> (RGB_COUNTER/Mcompar_c[25]_GND_5_o_LessThan_2_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  RGB_COUNTER/Mcompar_c[25]_GND_5_o_LessThan_2_o_cy<1> (RGB_COUNTER/Mcompar_c[25]_GND_5_o_LessThan_2_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  RGB_COUNTER/Mcompar_c[25]_GND_5_o_LessThan_2_o_cy<2> (RGB_COUNTER/Mcompar_c[25]_GND_5_o_LessThan_2_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  RGB_COUNTER/Mcompar_c[25]_GND_5_o_LessThan_2_o_cy<3> (RGB_COUNTER/Mcompar_c[25]_GND_5_o_LessThan_2_o_cy<3>)
+     MUXCY:CI->O          27   0.258   1.221  RGB_COUNTER/Mcompar_c[25]_GND_5_o_LessThan_2_o_cy<4> (RGB_COUNTER/Mcompar_c[25]_GND_5_o_LessThan_2_o_cy<4>)
+     LUT2:I1->O            1   0.205   0.000  RGB_COUNTER/c_0_rstpot (RGB_COUNTER/c_0_rstpot)
+     FD:D                      0.102          RGB_COUNTER/c_0
+    ----------------------------------------
+    Total                      3.660ns (1.444ns logic, 2.216ns route)
+                                       (39.4% logic, 60.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'RGB_COUNTER/trigger'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            rgbCommon_9 (FF)
+  Destination:       rgbCommon<9> (PAD)
+  Source Clock:      RGB_COUNTER/trigger rising
+
+  Data Path: rgbCommon_9 to rgbCommon<9>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  rgbCommon_9 (rgbCommon_9)
      OBUF:I->O                 2.571          rgbCommon_9_OBUF (rgbCommon<9>)
     ----------------------------------------
-    Total                      4.372ns (3.793ns logic, 0.579ns route)
-                                       (86.8% logic, 13.2% route)
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock RGB_COUNTER/trigger
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+RGB_COUNTER/trigger|    2.951|         |         |         |
+-------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.660|         |         |         |
+---------------+---------+---------+---------+---------+
+
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.27 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.33 secs
  
 --> 
 
 Total memory usage is 312892 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 
