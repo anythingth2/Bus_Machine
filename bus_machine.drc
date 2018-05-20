@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sun May 20 19:03:39 2018
+Sun May 20 20:14:13 2018
 
 drc -z Bus_Machine.ncd Bus_Machine.pcf
 

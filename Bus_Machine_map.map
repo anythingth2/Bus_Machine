@@ -11,7 +11,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Sun May 20 19:03:16 2018
+Mapped Date    : Sun May 20 20:13:51 2018
 
 Mapping design into LUTs...
 Running directed packing...
@@ -20,17 +20,17 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 4 secs 
+Total REAL time at the beginning of Placer: 3 secs 
 Total CPU  time at the beginning of Placer: 3 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:9995abd3) REAL time: 4 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:9995abd3) REAL time: 3 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:9995abd3) REAL time: 4 secs 
+Phase 2.7  Design Feasibility Check (Checksum:9995abd3) REAL time: 3 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:9995abd3) REAL time: 4 secs 
+Phase 3.31  Local Placement Optimization (Checksum:9995abd3) REAL time: 3 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
@@ -52,19 +52,19 @@ Phase 8.5  Local Placement Optimization (Checksum:9995abd3) REAL time: 5 secs
 Phase 9.8  Global Placement
 ....
 ....
-Phase 9.8  Global Placement (Checksum:66261391) REAL time: 5 secs 
+Phase 9.8  Global Placement (Checksum:e59f57cd) REAL time: 5 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:66261391) REAL time: 5 secs 
+Phase 10.5  Local Placement Optimization (Checksum:e59f57cd) REAL time: 5 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:699ee9a1) REAL time: 5 secs 
+Phase 11.18  Placement Optimization (Checksum:19ba4a3d) REAL time: 5 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:699ee9a1) REAL time: 5 secs 
+Phase 12.5  Local Placement Optimization (Checksum:19ba4a3d) REAL time: 5 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:699ee9a1) REAL time: 5 secs 
+Phase 13.34  Placement Validation (Checksum:19ba4a3d) REAL time: 5 secs 
 
 Total REAL time to Placer completion: 5 secs 
 Total CPU  time to Placer completion: 5 secs 

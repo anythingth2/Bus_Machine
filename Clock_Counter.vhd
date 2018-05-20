@@ -35,7 +35,8 @@ entity Clock_Counter is
 	);
 	port(
 		clock : in std_logic;
-		trigger : out std_logic
+		trigger : out std_logic;
+		rgb : out std_logic_vector(2 downto 0)
 	);
 end Clock_Counter;
 

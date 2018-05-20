@@ -42,46 +42,25 @@ entity Bus_Machine is
 end Bus_Machine;
 
 architecture Behavioral of Bus_Machine is
-	signal rgbTrigger : std_logic;
-	signal rgbIndex : integer range 0 to 11:= 0;
-	signal rgbPos : std_logic_vector(9 downto 0);
-	component Clock_Counter
-		generic(
-			N : integer
-		);
+	
+	
+	signal state : std_logic_vector(4 downto 0) := "00000";
+	signal rgbPos : std_logic_vector(9 downto 0):= "0101011000";
+	
+	
+	component Display_LED 
 		port(
-			clock : in std_logic;
-			trigger : out std_logic
+			rgb : out std_logic_vector(2 downto 0);
+			rgbPos : in std_logic_vector(9 downto 0);
+			clk :in std_logic;
+			rgbCommon : out std_logic_vector(9 downto 0)
 		);
 	end component;
 	
-
 begin
-	rgbPos <= "0101100111";
-	RGB_COUNTER : Clock_Counter generic map ( N => rgbNclock )
-										 port map (clock => clk,trigger => rgbTrigger);
-	
 
-	process(rgbTrigger,rgbIndex)
-	begin
-		
-		if (rgbTrigger'event and rgbTrigger = '1') then
-			rgbCommon(rgbIndex-1) <= '1';
-			rgbIndex <= rgbIndex + 1;
-			if (rgbIndex = 10) then
-				rgbIndex <= 0;
-			end if;
-			
-			if (rgbPos(rgbIndex) = '1')then 
-				rgb <= "010";
-			else
-				rgb <= "100";
-			end if;
-			rgbCommon(rgbIndex) <= '0';
-			
-		end if;
-		
-	end process;
+	 DisplayLed : Display_LED port map(rgb => rgb,rgbPos => rgbPos, clk => clk,rgbCommon => rgbCommon);
+	
 	
 	
 	

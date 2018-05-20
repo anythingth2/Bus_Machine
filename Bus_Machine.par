@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-CHICHACHAI::  Sun May 20 19:03:25 2018
+CHICHACHAI::  Sun May 20 20:13:59 2018
 
 par -w -intstyle ise -ol high -mt off Bus_Machine_map.ncd Bus_Machine.ncd
 Bus_Machine.pcf 
@@ -154,8 +154,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Autotimespec constraint for clock net clk | SETUP       |         N/A|     3.381ns|     N/A|           0
   _BUFGP                                    | HOLD        |     0.698ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net RGB | SETUP       |         N/A|     1.991ns|     N/A|           0
-  _COUNTER/trigger                          | HOLD        |     0.450ns|            |       0|           0
+  Autotimespec constraint for clock net Dis | SETUP       |         N/A|     1.991ns|     N/A|           0
+  playLed/RGB_COUNTER/trigger               | HOLD        |     0.450ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
