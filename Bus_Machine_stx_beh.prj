@@ -1,0 +1,3 @@
+vhdl isim_temp "Clock_Counter.vhd"
+vhdl isim_temp "Display_LED.vhd"
+vhdl isim_temp "Bus_Machine.vhd"

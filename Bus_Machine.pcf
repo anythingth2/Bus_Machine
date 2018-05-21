@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun May 20 20:13:56 2018
+// Written by: Map P.20131013 on Mon May 21 18:00:23 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -15,17 +15,53 @@ COMP "rgb<0>" LOCATE = SITE "P143" LEVEL 1;
 COMP "rgbCommon<7>" LOCATE = SITE "P142" LEVEL 1;
 COMP "rgb<1>" LOCATE = SITE "P141" LEVEL 1;
 COMP "rgbCommon<8>" LOCATE = SITE "P140" LEVEL 1;
+COMP "ledState<0>" LOCATE = SITE "P78" LEVEL 1;
 COMP "rgb<2>" LOCATE = SITE "P2" LEVEL 1;
 COMP "rgbCommon<9>" LOCATE = SITE "P138" LEVEL 1;
+COMP "ledState<1>" LOCATE = SITE "P75" LEVEL 1;
+COMP "ledState<2>" LOCATE = SITE "P74" LEVEL 1;
+COMP "ledState<3>" LOCATE = SITE "P67" LEVEL 1;
+COMP "rgbOut<0>" LOCATE = SITE "P84" LEVEL 1;
+COMP "rgbOut<1>" LOCATE = SITE "P85" LEVEL 1;
+COMP "rgbOut<2>" LOCATE = SITE "P87" LEVEL 1;
+COMP "rgbOut<3>" LOCATE = SITE "P88" LEVEL 1;
+COMP "swState<0>" LOCATE = SITE "P58" LEVEL 1;
+COMP "rgbOut<4>" LOCATE = SITE "P92" LEVEL 1;
+COMP "swState<1>" LOCATE = SITE "P57" LEVEL 1;
+COMP "rgbOut<5>" LOCATE = SITE "P93" LEVEL 1;
+COMP "swState<2>" LOCATE = SITE "P56" LEVEL 1;
+COMP "rgbOut<6>" LOCATE = SITE "P94" LEVEL 1;
+COMP "swState<3>" LOCATE = SITE "P55" LEVEL 1;
+COMP "rgbOut<7>" LOCATE = SITE "P95" LEVEL 1;
 COMP "posButton<0>" LOCATE = SITE "P22" LEVEL 1;
+PIN posButton<0>_pin<0> = BEL "posButton<0>" PINNAME PAD;
+PIN "posButton<0>_pin<0>" CLOCK_DEDICATED_ROUTE;
 COMP "posButton<1>" LOCATE = SITE "P24" LEVEL 1;
+PIN posButton<1>_pin<0> = BEL "posButton<1>" PINNAME PAD;
+PIN "posButton<1>_pin<0>" CLOCK_DEDICATED_ROUTE;
 COMP "posButton<2>" LOCATE = SITE "P5" LEVEL 1;
+PIN posButton<2>_pin<0> = BEL "posButton<2>" PINNAME PAD;
+PIN "posButton<2>_pin<0>" CLOCK_DEDICATED_ROUTE;
 COMP "posButton<3>" LOCATE = SITE "P7" LEVEL 1;
+PIN posButton<3>_pin<0> = BEL "posButton<3>" PINNAME PAD;
+PIN "posButton<3>_pin<0>" CLOCK_DEDICATED_ROUTE;
 COMP "posButton<4>" LOCATE = SITE "P9" LEVEL 1;
+PIN posButton<4>_pin<0> = BEL "posButton<4>" PINNAME PAD;
+PIN "posButton<4>_pin<0>" CLOCK_DEDICATED_ROUTE;
 COMP "posButton<5>" LOCATE = SITE "P11" LEVEL 1;
+PIN posButton<5>_pin<0> = BEL "posButton<5>" PINNAME PAD;
+PIN "posButton<5>_pin<0>" CLOCK_DEDICATED_ROUTE;
 COMP "posButton<6>" LOCATE = SITE "P14" LEVEL 1;
+PIN posButton<6>_pin<0> = BEL "posButton<6>" PINNAME PAD;
+PIN "posButton<6>_pin<0>" CLOCK_DEDICATED_ROUTE;
 COMP "posButton<7>" LOCATE = SITE "P16" LEVEL 1;
+PIN posButton<7>_pin<0> = BEL "posButton<7>" PINNAME PAD;
+PIN "posButton<7>_pin<0>" CLOCK_DEDICATED_ROUTE;
 COMP "posButton<8>" LOCATE = SITE "P21" LEVEL 1;
+PIN posButton<8>_pin<0> = BEL "posButton<8>" PINNAME PAD;
+PIN "posButton<8>_pin<0>" CLOCK_DEDICATED_ROUTE;
 COMP "posButton<9>" LOCATE = SITE "P23" LEVEL 1;
+PIN posButton<9>_pin<0> = BEL "posButton<9>" PINNAME PAD;
+PIN "posButton<9>_pin<0>" CLOCK_DEDICATED_ROUTE;
 SCHEMATIC END;
 

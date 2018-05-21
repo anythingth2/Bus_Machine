@@ -6,10 +6,22 @@ NET "posButton[7]" LOC = P16;
 NET "posButton[6]" LOC = P14;
 NET "posButton[5]" LOC = P11;
 NET "posButton[4]" LOC = P9;
-NET "posButton[3]" LOC = P7;
+NET "posButton[3]" LOC = P7; 
 NET "posButton[2]" LOC = P5;
 NET "posButton[1]" LOC = P24;
 NET "posButton[0]" LOC = P22;
+
+
+NET "posButton[9]" CLOCK_DEDICATED_ROUTE = TRUE;
+NET "posButton[8]" CLOCK_DEDICATED_ROUTE = TRUE;
+NET "posButton[7]" CLOCK_DEDICATED_ROUTE = TRUE;
+NET "posButton[6]" CLOCK_DEDICATED_ROUTE = TRUE;
+NET "posButton[5]" CLOCK_DEDICATED_ROUTE = TRUE;
+NET "posButton[4]" CLOCK_DEDICATED_ROUTE = TRUE;
+NET "posButton[3]" CLOCK_DEDICATED_ROUTE = TRUE;
+NET "posButton[2]" CLOCK_DEDICATED_ROUTE = TRUE;
+NET "posButton[1]" CLOCK_DEDICATED_ROUTE = TRUE;
+NET "posButton[0]" CLOCK_DEDICATED_ROUTE = TRUE;
 
 NET "rgbCommon[0]" LOC = P17;
 NET "rgbCommon[1]" LOC = P15;
@@ -22,8 +34,28 @@ NET "rgbCommon[7]" LOC = P142;
 NET "rgbCommon[8]" LOC = P140;
 NET "rgbCommon[9]" LOC = P138;
 
+NET "rgbOut[0]" LOC = P84;
+NET "rgbOut[1]" LOC = P85;
+NET "rgbOut[2]" LOC = P87;
+NET "rgbOut[3]" LOC = P88;
+NET "rgbOut[4]" LOC = P92;
+NET "rgbOut[5]" LOC = P93;
+NET "rgbOut[6]" LOC = P94;
+NET "rgbOut[7]" LOC = P95;
+
+
 NET "rgb[2]" LOC = P2;
 NET "rgb[1]" LOC = P141;
 NET "rgb[0]" LOC = P143;
 
 NET "clk" LOC = P123;
+
+NET "swState[3]" LOC = P55;
+NET "swState[2]" LOC = P56;
+NET "swState[1]" LOC = P57;
+NET "swState[0]" LOC = P58;
+
+NET "ledState[3]" LOC = P67;
+NET "ledState[2]" LOC = P74;
+NET "ledState[1]" LOC = P75;
+NET "ledState[0]" LOC = P78;

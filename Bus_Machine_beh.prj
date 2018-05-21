@@ -1,0 +1,3 @@
+vhdl work "Clock_Counter.vhd"
+vhdl work "Display_LED.vhd"
+vhdl work "Bus_Machine.vhd"
