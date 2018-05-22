@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Wed May 23 01:56:29 2018">
+<application name="pn" timeStamp="Wed May 23 02:57:23 2018">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="C16132A74161414BA743A7FAA4B1503F" type="project"/>
-<property name="ProjectIteration" value="152" type="project"/>
+<property name="ProjectIteration" value="160" type="project"/>
 <property name="ProjectFile" value="C:/Users/ChiChaChai/Documents/CE-KMITL/AdvDigital/Bus_Machine/Bus_Machine.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2018-05-20T17:02:37" type="project"/>
 </section>
@@ -25,7 +25,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2018-05-20T17:02:37" type="design"/>
 <property name="PROP_intWbtProjectID" value="C16132A74161414BA743A7FAA4B1503F" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="152" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="160" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_selectedSimRootSourceNode_behav" value="work.Bus_Machine" type="process"/>

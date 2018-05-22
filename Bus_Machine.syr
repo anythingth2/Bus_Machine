@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -120,13 +120,13 @@ Parsing architecture <Behavioral> of entity <bus_machine>.
 =========================================================================
 
 Elaborating entity <Bus_Machine> (architecture <Behavioral>) with generics from library <work>.
-WARNING:HDLCompiler:871 - "C:\Users\ChiChaChai\Documents\CE-KMITL\AdvDigital\Bus_Machine\Bus_Machine.vhd" Line 52: Using initial value "0000000000" for rgbpos since it is never assigned
 
 Elaborating entity <Display_LED> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <Clock_Counter> (architecture <Behavioral>) with generics from library <work>.
-WARNING:HDLCompiler:634 - "C:\Users\ChiChaChai\Documents\CE-KMITL\AdvDigital\Bus_Machine\Bus_Machine.vhd" Line 53: Net <rgbPos1[10]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\ChiChaChai\Documents\CE-KMITL\AdvDigital\Bus_Machine\Bus_Machine.vhd" Line 54: Net <rgbPos2[10]> does not have a driver.
+WARNING:HDLCompiler:92 - "C:\Users\ChiChaChai\Documents\CE-KMITL\AdvDigital\Bus_Machine\Bus_Machine.vhd" Line 254: state should be on the sensitivity list of the process
+WARNING:HDLCompiler:634 - "C:\Users\ChiChaChai\Documents\CE-KMITL\AdvDigital\Bus_Machine\Bus_Machine.vhd" Line 60: Net <rgbPos1[10]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\ChiChaChai\Documents\CE-KMITL\AdvDigital\Bus_Machine\Bus_Machine.vhd" Line 61: Net <rgbPos2[10]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -138,40 +138,92 @@ Synthesizing Unit <Bus_Machine>.
 WARNING:Xst:647 - Input <swState> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:2935 - Signal 'rgbPos1<10>', unconnected in block 'Bus_Machine', is tied to its initial value (0).
 WARNING:Xst:2935 - Signal 'rgbPos2<10>', unconnected in block 'Bus_Machine', is tied to its initial value (0).
+    Found 1-bit register for signal <price0>.
+    Found 1-bit register for signal <price1>.
+    Found 1-bit register for signal <price2>.
+    Found 1-bit register for signal <price3>.
+    Found 4-bit register for signal <state>.
+    Found 2-bit register for signal <countsum>.
+    Found 4-bit register for signal <sum>.
+    Found 5-bit register for signal <z>.
+    Found 1-bit register for signal <stateprice>.
+    Found 4-bit register for signal <count>.
+    Found 1-bit register for signal <statecount>.
+    Found 16-bit register for signal <c>.
+    Found 4-bit register for signal <x>.
+    Found 2-bit register for signal <pricecom>.
     Found 1-bit register for signal <rgbPos1<9>>.
+    Found 1-bit register for signal <rgbPos<9>>.
     Found 1-bit register for signal <rgbPos2<9>>.
     Found 1-bit register for signal <rgbPos1<8>>.
+    Found 1-bit register for signal <rgbPos<8>>.
     Found 1-bit register for signal <rgbPos2<8>>.
     Found 1-bit register for signal <rgbPos1<7>>.
+    Found 1-bit register for signal <rgbPos<7>>.
     Found 1-bit register for signal <rgbPos2<7>>.
     Found 1-bit register for signal <rgbPos1<6>>.
+    Found 1-bit register for signal <rgbPos<6>>.
     Found 1-bit register for signal <rgbPos2<6>>.
     Found 1-bit register for signal <rgbPos1<5>>.
+    Found 1-bit register for signal <rgbPos<5>>.
     Found 1-bit register for signal <rgbPos2<5>>.
     Found 1-bit register for signal <rgbPos1<4>>.
+    Found 1-bit register for signal <rgbPos<4>>.
     Found 1-bit register for signal <rgbPos2<4>>.
     Found 1-bit register for signal <rgbPos1<3>>.
+    Found 1-bit register for signal <rgbPos<3>>.
     Found 1-bit register for signal <rgbPos2<3>>.
     Found 1-bit register for signal <rgbPos1<2>>.
+    Found 1-bit register for signal <rgbPos<2>>.
     Found 1-bit register for signal <rgbPos2<2>>.
     Found 1-bit register for signal <rgbPos1<1>>.
+    Found 1-bit register for signal <rgbPos<1>>.
     Found 1-bit register for signal <rgbPos2<1>>.
     Found 1-bit register for signal <rgbPos1<0>>.
+    Found 1-bit register for signal <rgbPos<0>>.
     Found 1-bit register for signal <rgbPos2<0>>.
-    Found 4-bit register for signal <state>.
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 3                                              |
     | Transitions        | 7                                              |
     | Inputs             | 3                                              |
-    | Outputs            | 4                                              |
+    | Outputs            | 5                                              |
     | Clock              | clk (rising_edge)                              |
     | Power Up State     | 0000                                           |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
+    Found 6-bit subtractor for signal <GND_4_o_GND_4_o_sub_40_OUT> created at line 191.
+    Found 6-bit subtractor for signal <GND_4_o_GND_4_o_sub_42_OUT> created at line 190.
+    Found 6-bit subtractor for signal <GND_4_o_GND_4_o_sub_44_OUT> created at line 189.
+    Found 6-bit subtractor for signal <GND_4_o_GND_4_o_sub_46_OUT> created at line 188.
+    Found 2-bit adder for signal <countsum[1]_GND_4_o_add_55_OUT> created at line 257.
+    Found 4-bit adder for signal <sum[3]_GND_4_o_add_58_OUT> created at line 261.
+    Found 4-bit adder for signal <count[3]_GND_4_o_add_65_OUT> created at line 275.
+    Found 16-bit adder for signal <c[15]_GND_4_o_add_74_OUT> created at line 284.
+    Found 16x7-bit Read Only RAM for signal <priceseg>
+    Found 8x4-bit Read Only RAM for signal <_n0315>
+    Found 1-bit 10-to-1 multiplexer for signal <count[3]_X_4_o_Mux_54_o> created at line 256.
+WARNING:Xst:737 - Found 1-bit latch for signal <test<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <test<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <test<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <test<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <test<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <test<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <test<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <test<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <test<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <test<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 16-bit comparator greater for signal <n0115> created at line 285
+    Found 16-bit comparator greater for signal <GND_4_o_c[15]_LessThan_78_o> created at line 288
+    Found 16-bit comparator lessequal for signal <n0118> created at line 288
     Summary:
-	inferred  20 D-type flip-flop(s).
+	inferred   2 RAM(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  73 D-type flip-flop(s).
+	inferred  10 Latch(s).
+	inferred   3 Comparator(s).
+	inferred  14 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <Bus_Machine> synthesized.
 
@@ -212,29 +264,94 @@ WARNING:Xst:653 - Signal <rgb> is used but never assigned. This sourceless signa
 	inferred   1 Comparator(s).
 Unit <Clock_Counter> synthesized.
 
+Synthesizing Unit <mod_5u_4u>.
+    Related source file is "".
+    Found 9-bit adder for signal <GND_19_o_b[3]_add_1_OUT> created at line 0.
+    Found 8-bit adder for signal <GND_19_o_b[3]_add_3_OUT> created at line 0.
+    Found 7-bit adder for signal <GND_19_o_b[3]_add_5_OUT> created at line 0.
+    Found 6-bit adder for signal <GND_19_o_b[3]_add_7_OUT> created at line 0.
+    Found 5-bit adder for signal <a[4]_b[3]_add_9_OUT> created at line 0.
+    Found 5-bit adder for signal <a[4]_GND_19_o_add_11_OUT> created at line 0.
+    Found 9-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 6-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 5-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 5-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+	inferred  26 Multiplexer(s).
+Unit <mod_5u_4u> synthesized.
+
+Synthesizing Unit <div_5u_4u>.
+    Related source file is "".
+    Found 9-bit adder for signal <GND_20_o_b[3]_add_1_OUT> created at line 0.
+    Found 8-bit adder for signal <GND_20_o_b[3]_add_3_OUT> created at line 0.
+    Found 7-bit adder for signal <GND_20_o_b[3]_add_5_OUT> created at line 0.
+    Found 6-bit adder for signal <GND_20_o_b[3]_add_7_OUT> created at line 0.
+    Found 5-bit adder for signal <a[4]_b[3]_add_9_OUT[4:0]> created at line 0.
+    Found 9-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 6-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 5-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 5-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+	inferred  17 Multiplexer(s).
+Unit <div_5u_4u> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 4
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 1
+ 8x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 20
  10-bit subtractor                                     : 1
+ 16-bit adder                                          : 1
+ 2-bit adder                                           : 1
  26-bit adder                                          : 1
- 4-bit adder                                           : 1
+ 4-bit adder                                           : 3
  4-bit subtractor                                      : 1
-# Registers                                            : 25
- 1-bit register                                        : 21
+ 5-bit adder                                           : 3
+ 6-bit adder                                           : 2
+ 6-bit subtractor                                      : 1
+ 7-bit adder                                           : 2
+ 8-bit adder                                           : 2
+ 9-bit adder                                           : 2
+# Registers                                            : 48
+ 1-bit register                                        : 37
  10-bit register                                       : 1
+ 16-bit register                                       : 1
+ 2-bit register                                        : 2
  26-bit register                                       : 1
  3-bit register                                        : 1
- 4-bit register                                        : 1
-# Comparators                                          : 2
+ 4-bit register                                        : 4
+ 5-bit register                                        : 1
+# Latches                                              : 10
+ 1-bit latch                                           : 10
+# Comparators                                          : 17
  11-bit comparator greater                             : 1
+ 16-bit comparator greater                             : 2
+ 16-bit comparator lessequal                           : 1
  26-bit comparator greater                             : 1
-# Multiplexers                                         : 26
- 1-bit 10-to-1 multiplexer                             : 1
- 1-bit 2-to-1 multiplexer                              : 20
+ 5-bit comparator lessequal                            : 4
+ 6-bit comparator lessequal                            : 2
+ 7-bit comparator lessequal                            : 2
+ 8-bit comparator lessequal                            : 2
+ 9-bit comparator lessequal                            : 2
+# Multiplexers                                         : 83
+ 1-bit 10-to-1 multiplexer                             : 2
+ 1-bit 2-to-1 multiplexer                              : 60
  10-bit 2-to-1 multiplexer                             : 4
  3-bit 2-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 3
+ 5-bit 2-to-1 multiplexer                              : 9
+ 6-bit 2-to-1 multiplexer                              : 4
 # FSMs                                                 : 1
 
 =========================================================================
@@ -244,6 +361,56 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_0 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_1 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_2 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_3 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_4 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_5 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_6 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_7 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_8 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_9 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <z_4> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <Bus_Machine>.
+The following registers are absorbed into counter <countsum>: 1 register on signal <countsum>.
+The following registers are absorbed into counter <sum>: 1 register on signal <sum>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <c>: 1 register on signal <c>.
+INFO:Xst:3231 - The small RAM <Mram_priceseg> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <x>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <priceseg>      |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <z> prevents it from being combined with the RAM <Mram__n0315> for implementation as read-only block RAM.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <z<2:0>>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Bus_Machine> synthesized (advanced).
 
 Synthesizing (advanced) Unit <Clock_Counter>.
 The following registers are absorbed into counter <c>: 1 register on signal <c>.
@@ -257,22 +424,40 @@ Unit <Display_LED> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 8x4-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 14
  10-bit subtractor                                     : 1
+ 4-bit adder                                           : 1
  4-bit subtractor                                      : 1
-# Counters                                             : 2
+ 5-bit adder                                           : 10
+ 5-bit subtractor                                      : 1
+# Counters                                             : 6
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
  26-bit up counter                                     : 1
- 4-bit up counter                                      : 1
-# Registers                                            : 34
- Flip-Flops                                            : 34
-# Comparators                                          : 2
+ 4-bit up counter                                      : 3
+# Registers                                            : 61
+ Flip-Flops                                            : 61
+# Comparators                                          : 17
  11-bit comparator greater                             : 1
+ 16-bit comparator greater                             : 2
+ 16-bit comparator lessequal                           : 1
  26-bit comparator greater                             : 1
-# Multiplexers                                         : 26
- 1-bit 10-to-1 multiplexer                             : 1
- 1-bit 2-to-1 multiplexer                              : 20
+ 5-bit comparator lessequal                            : 4
+ 6-bit comparator lessequal                            : 2
+ 7-bit comparator lessequal                            : 2
+ 8-bit comparator lessequal                            : 2
+ 9-bit comparator lessequal                            : 2
+# Multiplexers                                         : 83
+ 1-bit 10-to-1 multiplexer                             : 2
+ 1-bit 2-to-1 multiplexer                              : 60
  10-bit 2-to-1 multiplexer                             : 4
  3-bit 2-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 3
+ 5-bit 2-to-1 multiplexer                              : 9
+ 6-bit 2-to-1 multiplexer                              : 4
 # FSMs                                                 : 1
 
 =========================================================================
@@ -280,6 +465,27 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_9 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_8 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_7 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_6 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_5 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_4 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_3 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_2 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_1 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rgbPos_0 hinder the constant cleaning in the block Bus_Machine.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <z_4> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <FSM_0> on signal <state[1:2]> with gray encoding.
 -------------------
@@ -293,10 +499,33 @@ Optimizing FSM <FSM_0> on signal <state[1:2]> with gray encoding.
 Optimizing unit <Bus_Machine> ...
 
 Optimizing unit <Display_LED> ...
+WARNING:Xst:1293 - FF/Latch <DisplayLed/RGB_COUNTER/c_4> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_5> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_6> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_7> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_8> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_9> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_10> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_11> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_12> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_13> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_14> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_15> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_16> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_17> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_18> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_19> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_20> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_21> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_22> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_23> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_24> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DisplayLed/RGB_COUNTER/c_25> has a constant value of 0 in block <Bus_Machine>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <statecount> in Unit <Bus_Machine> is equivalent to the following FF/Latch, which will be removed : <stateprice> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Bus_Machine, actual ratio is 3.
+Found area constraint ratio of 100 (+ 5) on block Bus_Machine, actual ratio is 4.
 
 Final Macro Processing ...
 
@@ -304,8 +533,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 66
- Flip-Flops                                            : 66
+# Registers                                            : 95
+ Flip-Flops                                            : 95
 
 =========================================================================
 
@@ -328,27 +557,31 @@ Top Level Output File Name         : Bus_Machine.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 232
+# BELS                             : 253
 #      GND                         : 1
-#      INV                         : 2
-#      LUT1                        : 25
-#      LUT2                        : 38
-#      LUT3                        : 12
-#      LUT4                        : 22
-#      LUT5                        : 43
-#      LUT6                        : 8
-#      MUXCY                       : 43
-#      MUXF7                       : 1
+#      INV                         : 6
+#      LUT1                        : 18
+#      LUT2                        : 24
+#      LUT3                        : 19
+#      LUT4                        : 45
+#      LUT5                        : 39
+#      LUT6                        : 31
+#      MUXCY                       : 36
+#      MUXF7                       : 3
 #      VCC                         : 1
-#      XORCY                       : 36
-# FlipFlops/Latches                : 66
-#      FD                          : 62
-#      FDR                         : 4
+#      XORCY                       : 30
+# FlipFlops/Latches                : 105
+#      FD                          : 65
+#      FDE                         : 14
+#      FDR                         : 8
+#      FDR_1                       : 4
+#      FDRE                        : 4
+#      LD                          : 10
 # Clock Buffers                    : 8
 #      BUFGP                       : 8
-# IO Buffers                       : 30
-#      IBUF                        : 3
-#      OBUF                        : 27
+# IO Buffers                       : 43
+#      IBUF                        : 7
+#      OBUF                        : 36
 
 Device utilization summary:
 ---------------------------
@@ -357,20 +590,20 @@ Selected Device : 6slx9tqg144-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              66  out of  11440     0%  
- Number of Slice LUTs:                  150  out of   5720     2%  
-    Number used as Logic:               150  out of   5720     2%  
+ Number of Slice Registers:             105  out of  11440     0%  
+ Number of Slice LUTs:                  182  out of   5720     3%  
+    Number used as Logic:               182  out of   5720     3%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    151
-   Number with an unused Flip Flop:      85  out of    151    56%  
-   Number with an unused LUT:             1  out of    151     0%  
-   Number of fully used LUT-FF pairs:    65  out of    151    43%  
-   Number of unique control sets:        13
+ Number of LUT Flip Flop pairs used:    196
+   Number with an unused Flip Flop:      91  out of    196    46%  
+   Number with an unused LUT:            14  out of    196     7%  
+   Number of fully used LUT-FF pairs:    91  out of    196    46%  
+   Number of unique control sets:        24
 
 IO Utilization: 
- Number of IOs:                          43
- Number of bonded IOBs:                  38  out of    102    37%  
+ Number of IOs:                          68
+ Number of bonded IOBs:                  51  out of    102    50%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                8  out of     16    50%  
@@ -396,18 +629,23 @@ Clock Information:
 -----------------------------------+----------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)      | Load  |
 -----------------------------------+----------------------------+-------+
-clk                                | BUFGP                      | 29    |
+button<1>                          | IBUF                       | 1     |
+button<0>                          | IBUF                       | 1     |
+button<2>                          | IBUF                       | 1     |
+button<3>                          | IBUF                       | 1     |
+clk                                | BUFGP                      | 44    |
+state_FSM_FFd1                     | NONE(test_8)               | 10    |
 DisplayLed/RGB_COUNTER/trigger     | NONE(DisplayLed/rgbIndex_3)| 17    |
-posButton<8>                       | BUFGP                      | 2     |
-posButton<9>                       | BUFGP                      | 2     |
-posButton<7>                       | BUFGP                      | 2     |
-posButton<6>                       | BUFGP                      | 2     |
-posButton<4>                       | BUFGP                      | 2     |
-posButton<5>                       | BUFGP                      | 2     |
-posButton<3>                       | BUFGP                      | 2     |
-posButton<1>                       | IBUF                       | 2     |
-posButton<2>                       | IBUF                       | 2     |
-posButton<0>                       | IBUF                       | 2     |
+posButton<9>                       | BUFGP                      | 3     |
+posButton<8>                       | BUFGP                      | 3     |
+posButton<7>                       | BUFGP                      | 3     |
+posButton<6>                       | BUFGP                      | 3     |
+posButton<5>                       | BUFGP                      | 3     |
+posButton<4>                       | BUFGP                      | 3     |
+posButton<3>                       | BUFGP                      | 3     |
+posButton<2>                       | IBUF                       | 3     |
+posButton<1>                       | IBUF                       | 3     |
+posButton<0>                       | IBUF                       | 3     |
 -----------------------------------+----------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -419,9 +657,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 3.660ns (Maximum Frequency: 273.196MHz)
+   Minimum period: 4.430ns (Maximum Frequency: 225.723MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 10.264ns
+   Maximum output required time after clock: 10.290ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -429,274 +667,356 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 3.660ns (frequency: 273.196MHz)
-  Total number of paths / destination ports: 1678 / 29
+Timing constraint: Default period analysis for Clock 'button<1>'
+  Clock period: 1.591ns (frequency: 628.535MHz)
+  Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               3.660ns (Levels of Logic = 7)
-  Source:            DisplayLed/RGB_COUNTER/c_2 (FF)
-  Destination:       DisplayLed/RGB_COUNTER/c_25 (FF)
+Delay:               1.591ns (Levels of Logic = 0)
+  Source:            price1 (FF)
+  Destination:       price1 (FF)
+  Source Clock:      button<1> falling
+  Destination Clock: button<1> falling
+
+  Data Path: price1 to price1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR_1:C->Q            5   0.447   0.714  price1 (price1)
+     FDR_1:R                   0.430          price1
+    ----------------------------------------
+    Total                      1.591ns (0.877ns logic, 0.714ns route)
+                                       (55.1% logic, 44.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'button<0>'
+  Clock period: 1.591ns (frequency: 628.535MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.591ns (Levels of Logic = 0)
+  Source:            price0 (FF)
+  Destination:       price0 (FF)
+  Source Clock:      button<0> falling
+  Destination Clock: button<0> falling
+
+  Data Path: price0 to price0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR_1:C->Q            5   0.447   0.714  price0 (price0)
+     FDR_1:R                   0.430          price0
+    ----------------------------------------
+    Total                      1.591ns (0.877ns logic, 0.714ns route)
+                                       (55.1% logic, 44.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'button<2>'
+  Clock period: 1.621ns (frequency: 616.998MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.621ns (Levels of Logic = 0)
+  Source:            price2 (FF)
+  Destination:       price2 (FF)
+  Source Clock:      button<2> falling
+  Destination Clock: button<2> falling
+
+  Data Path: price2 to price2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR_1:C->Q            6   0.447   0.744  price2 (price2)
+     FDR_1:R                   0.430          price2
+    ----------------------------------------
+    Total                      1.621ns (0.877ns logic, 0.744ns route)
+                                       (54.1% logic, 45.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'button<3>'
+  Clock period: 1.621ns (frequency: 616.998MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.621ns (Levels of Logic = 0)
+  Source:            price3 (FF)
+  Destination:       price3 (FF)
+  Source Clock:      button<3> falling
+  Destination Clock: button<3> falling
+
+  Data Path: price3 to price3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR_1:C->Q            6   0.447   0.744  price3 (price3)
+     FDR_1:R                   0.430          price3
+    ----------------------------------------
+    Total                      1.621ns (0.877ns logic, 0.744ns route)
+                                       (54.1% logic, 45.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.430ns (frequency: 225.723MHz)
+  Total number of paths / destination ports: 732 / 66
+-------------------------------------------------------------------------
+Delay:               4.430ns (Levels of Logic = 3)
+  Source:            c_10 (FF)
+  Destination:       x_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: DisplayLed/RGB_COUNTER/c_2 to DisplayLed/RGB_COUNTER/c_25
+  Data Path: c_10 to x_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               3   0.447   0.995  DisplayLed/RGB_COUNTER/c_2 (DisplayLed/RGB_COUNTER/c_2)
-     LUT5:I0->O            1   0.203   0.000  DisplayLed/RGB_COUNTER/Mcompar_c[25]_GND_8_o_LessThan_2_o_lut<0> (DisplayLed/RGB_COUNTER/Mcompar_c[25]_GND_8_o_LessThan_2_o_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  DisplayLed/RGB_COUNTER/Mcompar_c[25]_GND_8_o_LessThan_2_o_cy<0> (DisplayLed/RGB_COUNTER/Mcompar_c[25]_GND_8_o_LessThan_2_o_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  DisplayLed/RGB_COUNTER/Mcompar_c[25]_GND_8_o_LessThan_2_o_cy<1> (DisplayLed/RGB_COUNTER/Mcompar_c[25]_GND_8_o_LessThan_2_o_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  DisplayLed/RGB_COUNTER/Mcompar_c[25]_GND_8_o_LessThan_2_o_cy<2> (DisplayLed/RGB_COUNTER/Mcompar_c[25]_GND_8_o_LessThan_2_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  DisplayLed/RGB_COUNTER/Mcompar_c[25]_GND_8_o_LessThan_2_o_cy<3> (DisplayLed/RGB_COUNTER/Mcompar_c[25]_GND_8_o_LessThan_2_o_cy<3>)
-     MUXCY:CI->O          27   0.258   1.221  DisplayLed/RGB_COUNTER/Mcompar_c[25]_GND_8_o_LessThan_2_o_cy<4> (DisplayLed/RGB_COUNTER/Mcompar_c[25]_GND_8_o_LessThan_2_o_cy<4>)
-     LUT2:I1->O            1   0.205   0.000  DisplayLed/RGB_COUNTER/c_25_rstpot (DisplayLed/RGB_COUNTER/c_25_rstpot)
-     FD:D                      0.102          DisplayLed/RGB_COUNTER/c_25
+     FD:C->Q               4   0.447   0.931  c_10 (c_10)
+     LUT4:I0->O            1   0.203   0.684  _n0362_inv1 (_n0362_inv2)
+     LUT6:I4->O            3   0.203   0.755  _n0362_inv3 (_n0362_inv4)
+     LUT6:I4->O            4   0.203   0.683  _n0362_inv4 (_n0362_inv)
+     FDE:CE                    0.322          x_0
     ----------------------------------------
-    Total                      3.660ns (1.444ns logic, 2.216ns route)
-                                       (39.4% logic, 60.6% route)
+    Total                      4.430ns (1.378ns logic, 3.052ns route)
+                                       (31.1% logic, 68.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'DisplayLed/RGB_COUNTER/trigger'
-  Clock period: 2.974ns (frequency: 336.197MHz)
+  Clock period: 3.185ns (frequency: 313.922MHz)
   Total number of paths / destination ports: 97 / 21
 -------------------------------------------------------------------------
-Delay:               2.974ns (Levels of Logic = 1)
-  Source:            DisplayLed/rgbIndex_3 (FF)
-  Destination:       DisplayLed/rgbIndex_3 (FF)
+Delay:               3.185ns (Levels of Logic = 3)
+  Source:            DisplayLed/rgbIndex_0 (FF)
+  Destination:       DisplayLed/rgb_2 (FF)
   Source Clock:      DisplayLed/RGB_COUNTER/trigger rising
   Destination Clock: DisplayLed/RGB_COUNTER/trigger rising
 
-  Data Path: DisplayLed/rgbIndex_3 to DisplayLed/rgbIndex_3
+  Data Path: DisplayLed/rgbIndex_0 to DisplayLed/rgb_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             15   0.447   1.210  DisplayLed/rgbIndex_3 (DisplayLed/rgbIndex_3)
-     LUT4:I1->O            4   0.205   0.683  DisplayLed/PWR_7_o_rgbIndex[3]_equal_4_o<3>1 (DisplayLed/PWR_7_o_rgbIndex[3]_equal_4_o)
-     FDR:R                     0.430          DisplayLed/rgbIndex_0
+     FDR:C->Q             20   0.447   1.437  DisplayLed/rgbIndex_0 (DisplayLed/rgbIndex_0)
+     LUT6:I1->O            1   0.203   0.000  DisplayLed/Mmux_rgbIndex[3]_X_7_o_Mux_5_o_6 (DisplayLed/Mmux_rgbIndex[3]_X_7_o_Mux_5_o_6)
+     MUXF7:I1->O           3   0.140   0.651  DisplayLed/Mmux_rgbIndex[3]_X_7_o_Mux_5_o_5_f7 (DisplayLed/Mmux_rgbIndex[3]_X_7_o_Mux_5_o_5_f7)
+     LUT5:I4->O            1   0.205   0.000  DisplayLed/PWR_7_o_GND_7_o_mux_8_OUT<2>_inv1 (DisplayLed/PWR_7_o_GND_7_o_mux_8_OUT<2>)
+     FD:D                      0.102          DisplayLed/rgb_2
     ----------------------------------------
-    Total                      2.974ns (1.082ns logic, 1.892ns route)
-                                       (36.4% logic, 63.6% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'posButton<8>'
-  Clock period: 1.785ns (frequency: 560.365MHz)
-  Total number of paths / destination ports: 3 / 2
--------------------------------------------------------------------------
-Delay:               1.785ns (Levels of Logic = 1)
-  Source:            rgbPos1_8 (FF)
-  Destination:       rgbPos2_8 (FF)
-  Source Clock:      posButton<8> rising
-  Destination Clock: posButton<8> rising
-
-  Data Path: rgbPos1_8 to rgbPos2_8
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               8   0.447   1.031  rgbPos1_8 (rgbPos1_8)
-     LUT4:I1->O            1   0.205   0.000  rgbPos2_8_glue_set (rgbPos2_8_glue_set)
-     FD:D                      0.102          rgbPos2_8
-    ----------------------------------------
-    Total                      1.785ns (0.754ns logic, 1.031ns route)
-                                       (42.3% logic, 57.7% route)
+    Total                      3.185ns (1.097ns logic, 2.089ns route)
+                                       (34.4% logic, 65.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'posButton<9>'
-  Clock period: 1.785ns (frequency: 560.365MHz)
-  Total number of paths / destination ports: 3 / 2
+  Clock period: 1.773ns (frequency: 564.127MHz)
+  Total number of paths / destination ports: 5 / 3
 -------------------------------------------------------------------------
-Delay:               1.785ns (Levels of Logic = 1)
-  Source:            rgbPos1_9 (FF)
+Delay:               1.773ns (Levels of Logic = 1)
+  Source:            rgbPos2_9 (FF)
   Destination:       rgbPos2_9 (FF)
   Source Clock:      posButton<9> rising
   Destination Clock: posButton<9> rising
 
-  Data Path: rgbPos1_9 to rgbPos2_9
+  Data Path: rgbPos2_9 to rgbPos2_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               8   0.447   1.031  rgbPos1_9 (rgbPos1_9)
-     LUT4:I1->O            1   0.205   0.000  rgbPos2_9_glue_set (rgbPos2_9_glue_set)
+     FD:C->Q               7   0.447   1.021  rgbPos2_9 (rgbPos2_9)
+     LUT4:I0->O            1   0.203   0.000  rgbPos2_9_glue_set (rgbPos2_9_glue_set)
      FD:D                      0.102          rgbPos2_9
     ----------------------------------------
-    Total                      1.785ns (0.754ns logic, 1.031ns route)
-                                       (42.3% logic, 57.7% route)
+    Total                      1.773ns (0.752ns logic, 1.021ns route)
+                                       (42.4% logic, 57.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'posButton<8>'
+  Clock period: 1.773ns (frequency: 564.127MHz)
+  Total number of paths / destination ports: 5 / 3
+-------------------------------------------------------------------------
+Delay:               1.773ns (Levels of Logic = 1)
+  Source:            rgbPos2_8 (FF)
+  Destination:       rgbPos2_8 (FF)
+  Source Clock:      posButton<8> rising
+  Destination Clock: posButton<8> rising
+
+  Data Path: rgbPos2_8 to rgbPos2_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.447   1.021  rgbPos2_8 (rgbPos2_8)
+     LUT4:I0->O            1   0.203   0.000  rgbPos2_8_glue_set (rgbPos2_8_glue_set)
+     FD:D                      0.102          rgbPos2_8
+    ----------------------------------------
+    Total                      1.773ns (0.752ns logic, 1.021ns route)
+                                       (42.4% logic, 57.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'posButton<7>'
-  Clock period: 1.812ns (frequency: 551.953MHz)
-  Total number of paths / destination ports: 3 / 2
+  Clock period: 1.802ns (frequency: 555.078MHz)
+  Total number of paths / destination ports: 5 / 3
 -------------------------------------------------------------------------
-Delay:               1.812ns (Levels of Logic = 1)
-  Source:            rgbPos1_7 (FF)
+Delay:               1.802ns (Levels of Logic = 1)
+  Source:            rgbPos2_7 (FF)
   Destination:       rgbPos2_7 (FF)
   Source Clock:      posButton<7> rising
   Destination Clock: posButton<7> rising
 
-  Data Path: rgbPos1_7 to rgbPos2_7
+  Data Path: rgbPos2_7 to rgbPos2_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               9   0.447   1.058  rgbPos1_7 (rgbPos1_7)
-     LUT4:I1->O            1   0.205   0.000  rgbPos2_7_glue_set (rgbPos2_7_glue_set)
+     FD:C->Q               8   0.447   1.050  rgbPos2_7 (rgbPos2_7)
+     LUT4:I0->O            1   0.203   0.000  rgbPos2_7_glue_set (rgbPos2_7_glue_set)
      FD:D                      0.102          rgbPos2_7
     ----------------------------------------
-    Total                      1.812ns (0.754ns logic, 1.058ns route)
-                                       (41.6% logic, 58.4% route)
+    Total                      1.802ns (0.752ns logic, 1.050ns route)
+                                       (41.7% logic, 58.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'posButton<6>'
-  Clock period: 1.839ns (frequency: 543.789MHz)
-  Total number of paths / destination ports: 3 / 2
+  Clock period: 1.829ns (frequency: 546.822MHz)
+  Total number of paths / destination ports: 5 / 3
 -------------------------------------------------------------------------
-Delay:               1.839ns (Levels of Logic = 1)
-  Source:            rgbPos1_6 (FF)
+Delay:               1.829ns (Levels of Logic = 1)
+  Source:            rgbPos2_6 (FF)
   Destination:       rgbPos2_6 (FF)
   Source Clock:      posButton<6> rising
   Destination Clock: posButton<6> rising
 
-  Data Path: rgbPos1_6 to rgbPos2_6
+  Data Path: rgbPos2_6 to rgbPos2_6
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              10   0.447   1.085  rgbPos1_6 (rgbPos1_6)
-     LUT4:I1->O            1   0.205   0.000  rgbPos2_6_glue_set (rgbPos2_6_glue_set)
+     FD:C->Q               9   0.447   1.077  rgbPos2_6 (rgbPos2_6)
+     LUT4:I0->O            1   0.203   0.000  rgbPos2_6_glue_set (rgbPos2_6_glue_set)
      FD:D                      0.102          rgbPos2_6
     ----------------------------------------
-    Total                      1.839ns (0.754ns logic, 1.085ns route)
-                                       (41.0% logic, 59.0% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'posButton<4>'
-  Clock period: 1.839ns (frequency: 543.789MHz)
-  Total number of paths / destination ports: 3 / 2
--------------------------------------------------------------------------
-Delay:               1.839ns (Levels of Logic = 1)
-  Source:            rgbPos1_4 (FF)
-  Destination:       rgbPos2_4 (FF)
-  Source Clock:      posButton<4> rising
-  Destination Clock: posButton<4> rising
-
-  Data Path: rgbPos1_4 to rgbPos2_4
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q              10   0.447   1.085  rgbPos1_4 (rgbPos1_4)
-     LUT4:I1->O            1   0.205   0.000  rgbPos2_4_glue_set (rgbPos2_4_glue_set)
-     FD:D                      0.102          rgbPos2_4
-    ----------------------------------------
-    Total                      1.839ns (0.754ns logic, 1.085ns route)
-                                       (41.0% logic, 59.0% route)
+    Total                      1.829ns (0.752ns logic, 1.077ns route)
+                                       (41.1% logic, 58.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'posButton<5>'
-  Clock period: 1.839ns (frequency: 543.789MHz)
-  Total number of paths / destination ports: 3 / 2
+  Clock period: 1.829ns (frequency: 546.822MHz)
+  Total number of paths / destination ports: 5 / 3
 -------------------------------------------------------------------------
-Delay:               1.839ns (Levels of Logic = 1)
-  Source:            rgbPos1_5 (FF)
+Delay:               1.829ns (Levels of Logic = 1)
+  Source:            rgbPos2_5 (FF)
   Destination:       rgbPos2_5 (FF)
   Source Clock:      posButton<5> rising
   Destination Clock: posButton<5> rising
 
-  Data Path: rgbPos1_5 to rgbPos2_5
+  Data Path: rgbPos2_5 to rgbPos2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              10   0.447   1.085  rgbPos1_5 (rgbPos1_5)
-     LUT4:I1->O            1   0.205   0.000  rgbPos2_5_glue_set (rgbPos2_5_glue_set)
+     FD:C->Q               9   0.447   1.077  rgbPos2_5 (rgbPos2_5)
+     LUT4:I0->O            1   0.203   0.000  rgbPos2_5_glue_set (rgbPos2_5_glue_set)
      FD:D                      0.102          rgbPos2_5
     ----------------------------------------
-    Total                      1.839ns (0.754ns logic, 1.085ns route)
-                                       (41.0% logic, 59.0% route)
+    Total                      1.829ns (0.752ns logic, 1.077ns route)
+                                       (41.1% logic, 58.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'posButton<4>'
+  Clock period: 1.829ns (frequency: 546.822MHz)
+  Total number of paths / destination ports: 5 / 3
+-------------------------------------------------------------------------
+Delay:               1.829ns (Levels of Logic = 1)
+  Source:            rgbPos2_4 (FF)
+  Destination:       rgbPos2_4 (FF)
+  Source Clock:      posButton<4> rising
+  Destination Clock: posButton<4> rising
+
+  Data Path: rgbPos2_4 to rgbPos2_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               9   0.447   1.077  rgbPos2_4 (rgbPos2_4)
+     LUT4:I0->O            1   0.203   0.000  rgbPos2_4_glue_set (rgbPos2_4_glue_set)
+     FD:D                      0.102          rgbPos2_4
+    ----------------------------------------
+    Total                      1.829ns (0.752ns logic, 1.077ns route)
+                                       (41.1% logic, 58.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'posButton<3>'
-  Clock period: 1.839ns (frequency: 543.789MHz)
-  Total number of paths / destination ports: 3 / 2
+  Clock period: 1.829ns (frequency: 546.822MHz)
+  Total number of paths / destination ports: 5 / 3
 -------------------------------------------------------------------------
-Delay:               1.839ns (Levels of Logic = 1)
-  Source:            rgbPos1_3 (FF)
+Delay:               1.829ns (Levels of Logic = 1)
+  Source:            rgbPos2_3 (FF)
   Destination:       rgbPos2_3 (FF)
   Source Clock:      posButton<3> rising
   Destination Clock: posButton<3> rising
 
-  Data Path: rgbPos1_3 to rgbPos2_3
+  Data Path: rgbPos2_3 to rgbPos2_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              10   0.447   1.085  rgbPos1_3 (rgbPos1_3)
-     LUT4:I1->O            1   0.205   0.000  rgbPos2_3_glue_set (rgbPos2_3_glue_set)
+     FD:C->Q               9   0.447   1.077  rgbPos2_3 (rgbPos2_3)
+     LUT4:I0->O            1   0.203   0.000  rgbPos2_3_glue_set (rgbPos2_3_glue_set)
      FD:D                      0.102          rgbPos2_3
     ----------------------------------------
-    Total                      1.839ns (0.754ns logic, 1.085ns route)
-                                       (41.0% logic, 59.0% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'posButton<1>'
-  Clock period: 1.839ns (frequency: 543.789MHz)
-  Total number of paths / destination ports: 3 / 2
--------------------------------------------------------------------------
-Delay:               1.839ns (Levels of Logic = 1)
-  Source:            rgbPos1_1 (FF)
-  Destination:       rgbPos2_1 (FF)
-  Source Clock:      posButton<1> rising
-  Destination Clock: posButton<1> rising
-
-  Data Path: rgbPos1_1 to rgbPos2_1
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q              10   0.447   1.085  rgbPos1_1 (rgbPos1_1)
-     LUT4:I1->O            1   0.205   0.000  rgbPos2_1_glue_set (rgbPos2_1_glue_set)
-     FD:D                      0.102          rgbPos2_1
-    ----------------------------------------
-    Total                      1.839ns (0.754ns logic, 1.085ns route)
-                                       (41.0% logic, 59.0% route)
+    Total                      1.829ns (0.752ns logic, 1.077ns route)
+                                       (41.1% logic, 58.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'posButton<2>'
-  Clock period: 1.839ns (frequency: 543.789MHz)
-  Total number of paths / destination ports: 3 / 2
+  Clock period: 1.829ns (frequency: 546.822MHz)
+  Total number of paths / destination ports: 5 / 3
 -------------------------------------------------------------------------
-Delay:               1.839ns (Levels of Logic = 1)
-  Source:            rgbPos1_2 (FF)
+Delay:               1.829ns (Levels of Logic = 1)
+  Source:            rgbPos2_2 (FF)
   Destination:       rgbPos2_2 (FF)
   Source Clock:      posButton<2> rising
   Destination Clock: posButton<2> rising
 
-  Data Path: rgbPos1_2 to rgbPos2_2
+  Data Path: rgbPos2_2 to rgbPos2_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              10   0.447   1.085  rgbPos1_2 (rgbPos1_2)
-     LUT4:I1->O            1   0.205   0.000  rgbPos2_2_glue_set (rgbPos2_2_glue_set)
+     FD:C->Q               9   0.447   1.077  rgbPos2_2 (rgbPos2_2)
+     LUT4:I0->O            1   0.203   0.000  rgbPos2_2_glue_set (rgbPos2_2_glue_set)
      FD:D                      0.102          rgbPos2_2
     ----------------------------------------
-    Total                      1.839ns (0.754ns logic, 1.085ns route)
-                                       (41.0% logic, 59.0% route)
+    Total                      1.829ns (0.752ns logic, 1.077ns route)
+                                       (41.1% logic, 58.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'posButton<1>'
+  Clock period: 1.829ns (frequency: 546.822MHz)
+  Total number of paths / destination ports: 5 / 3
+-------------------------------------------------------------------------
+Delay:               1.829ns (Levels of Logic = 1)
+  Source:            rgbPos2_1 (FF)
+  Destination:       rgbPos2_1 (FF)
+  Source Clock:      posButton<1> rising
+  Destination Clock: posButton<1> rising
+
+  Data Path: rgbPos2_1 to rgbPos2_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               9   0.447   1.077  rgbPos2_1 (rgbPos2_1)
+     LUT4:I0->O            1   0.203   0.000  rgbPos2_1_glue_set (rgbPos2_1_glue_set)
+     FD:D                      0.102          rgbPos2_1
+    ----------------------------------------
+    Total                      1.829ns (0.752ns logic, 1.077ns route)
+                                       (41.1% logic, 58.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'posButton<0>'
-  Clock period: 1.839ns (frequency: 543.789MHz)
-  Total number of paths / destination ports: 3 / 2
+  Clock period: 1.829ns (frequency: 546.822MHz)
+  Total number of paths / destination ports: 5 / 3
 -------------------------------------------------------------------------
-Delay:               1.839ns (Levels of Logic = 1)
-  Source:            rgbPos1_0 (FF)
+Delay:               1.829ns (Levels of Logic = 1)
+  Source:            rgbPos2_0 (FF)
   Destination:       rgbPos2_0 (FF)
   Source Clock:      posButton<0> rising
   Destination Clock: posButton<0> rising
 
-  Data Path: rgbPos1_0 to rgbPos2_0
+  Data Path: rgbPos2_0 to rgbPos2_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              10   0.447   1.085  rgbPos1_0 (rgbPos1_0)
-     LUT4:I1->O            1   0.205   0.000  rgbPos2_0_glue_set (rgbPos2_0_glue_set)
+     FD:C->Q               9   0.447   1.077  rgbPos2_0 (rgbPos2_0)
+     LUT4:I0->O            1   0.203   0.000  rgbPos2_0_glue_set (rgbPos2_0_glue_set)
      FD:D                      0.102          rgbPos2_0
     ----------------------------------------
-    Total                      1.839ns (0.754ns logic, 1.085ns route)
-                                       (41.0% logic, 59.0% route)
+    Total                      1.829ns (0.752ns logic, 1.077ns route)
+                                       (41.1% logic, 58.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'DisplayLed/RGB_COUNTER/trigger'
@@ -719,23 +1039,23 @@ Offset:              3.634ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 3 / 2
+  Total number of paths / destination ports: 33 / 11
 -------------------------------------------------------------------------
-Offset:              5.058ns (Levels of Logic = 2)
-  Source:            state_FSM_FFd2 (FF)
+Offset:              5.338ns (Levels of Logic = 2)
+  Source:            state_FSM_FFd1 (FF)
   Destination:       ledState<0> (PAD)
   Source Clock:      clk rising
 
-  Data Path: state_FSM_FFd2 to ledState<0>
+  Data Path: state_FSM_FFd1 to ledState<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              23   0.447   1.258  state_FSM_FFd2 (state_FSM_FFd2)
+     FD:C->Q              42   0.447   1.538  state_FSM_FFd1 (state_FSM_FFd1)
      LUT2:I0->O            1   0.203   0.579  ledState<0>1 (ledState_0_OBUF)
      OBUF:I->O                 2.571          ledState_0_OBUF (ledState<0>)
     ----------------------------------------
-    Total                      5.058ns (3.221ns logic, 1.837ns route)
-                                       (63.7% logic, 36.3% route)
+    Total                      5.338ns (3.221ns logic, 2.117ns route)
+                                       (60.3% logic, 39.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'posButton<1>'
@@ -771,7 +1091,7 @@ Offset:              10.210ns (Levels of Logic = 12)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'posButton<0>'
   Total number of paths / destination ports: 436 / 10
 -------------------------------------------------------------------------
-Offset:              10.264ns (Levels of Logic = 12)
+Offset:              10.290ns (Levels of Logic = 12)
   Source:            rgbPos1_0 (FF)
   Destination:       rgbOut<9> (PAD)
   Source Clock:      posButton<0> rising
@@ -780,7 +1100,7 @@ Offset:              10.264ns (Levels of Logic = 12)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              10   0.447   1.104  rgbPos1_0 (rgbPos1_0)
+     FD:C->Q              11   0.447   1.130  rgbPos1_0 (rgbPos1_0)
      LUT4:I0->O            1   0.203   0.000  DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_lut<0> (DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_lut<0>)
      MUXCY:S->O            1   0.172   0.000  DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<0> (DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<0>)
      MUXCY:CI->O           1   0.019   0.000  DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<1> (DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<1>)
@@ -794,8 +1114,8 @@ Offset:              10.264ns (Levels of Logic = 12)
      LUT5:I1->O            4   0.203   0.683  DisplayLed/Mmux_rgbOutput101 (rgbOut_9_OBUF)
      OBUF:I->O                 2.571          rgbOut_9_OBUF (rgbOut<9>)
     ----------------------------------------
-    Total                     10.264ns (4.810ns logic, 5.454ns route)
-                                       (46.9% logic, 53.1% route)
+    Total                     10.290ns (4.810ns logic, 5.480ns route)
+                                       (46.7% logic, 53.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'posButton<3>'
@@ -830,7 +1150,7 @@ Offset:              10.191ns (Levels of Logic = 11)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'posButton<2>'
   Total number of paths / destination ports: 424 / 10
 -------------------------------------------------------------------------
-Offset:              10.245ns (Levels of Logic = 11)
+Offset:              10.271ns (Levels of Logic = 11)
   Source:            rgbPos1_2 (FF)
   Destination:       rgbOut<9> (PAD)
   Source Clock:      posButton<2> rising
@@ -839,7 +1159,7 @@ Offset:              10.245ns (Levels of Logic = 11)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              10   0.447   1.104  rgbPos1_2 (rgbPos1_2)
+     FD:C->Q              11   0.447   1.130  rgbPos1_2 (rgbPos1_2)
      LUT4:I0->O            1   0.203   0.000  DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_lut<1> (DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_lut<1>)
      MUXCY:S->O            1   0.172   0.000  DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<1> (DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<1>)
      MUXCY:CI->O           1   0.019   0.000  DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<2> (DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<2>)
@@ -852,8 +1172,8 @@ Offset:              10.245ns (Levels of Logic = 11)
      LUT5:I1->O            4   0.203   0.683  DisplayLed/Mmux_rgbOutput101 (rgbOut_9_OBUF)
      OBUF:I->O                 2.571          rgbOut_9_OBUF (rgbOut<9>)
     ----------------------------------------
-    Total                     10.245ns (4.791ns logic, 5.454ns route)
-                                       (46.8% logic, 53.2% route)
+    Total                     10.271ns (4.791ns logic, 5.480ns route)
+                                       (46.6% logic, 53.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'posButton<5>'
@@ -887,7 +1207,7 @@ Offset:              10.172ns (Levels of Logic = 10)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'posButton<4>'
   Total number of paths / destination ports: 412 / 10
 -------------------------------------------------------------------------
-Offset:              10.226ns (Levels of Logic = 10)
+Offset:              10.252ns (Levels of Logic = 10)
   Source:            rgbPos1_4 (FF)
   Destination:       rgbOut<9> (PAD)
   Source Clock:      posButton<4> rising
@@ -896,7 +1216,7 @@ Offset:              10.226ns (Levels of Logic = 10)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              10   0.447   1.104  rgbPos1_4 (rgbPos1_4)
+     FD:C->Q              11   0.447   1.130  rgbPos1_4 (rgbPos1_4)
      LUT4:I0->O            1   0.203   0.000  DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_lut<2> (DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_lut<2>)
      MUXCY:S->O            1   0.172   0.000  DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<2> (DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<2>)
      MUXCY:CI->O           1   0.213   0.684  DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<3> (DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<3>)
@@ -908,8 +1228,8 @@ Offset:              10.226ns (Levels of Logic = 10)
      LUT5:I1->O            4   0.203   0.683  DisplayLed/Mmux_rgbOutput101 (rgbOut_9_OBUF)
      OBUF:I->O                 2.571          rgbOut_9_OBUF (rgbOut<9>)
     ----------------------------------------
-    Total                     10.226ns (4.772ns logic, 5.454ns route)
-                                       (46.7% logic, 53.3% route)
+    Total                     10.252ns (4.772ns logic, 5.480ns route)
+                                       (46.5% logic, 53.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'posButton<7>'
@@ -942,7 +1262,7 @@ Offset:              10.125ns (Levels of Logic = 9)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'posButton<6>'
   Total number of paths / destination ports: 400 / 10
 -------------------------------------------------------------------------
-Offset:              10.207ns (Levels of Logic = 9)
+Offset:              10.233ns (Levels of Logic = 9)
   Source:            rgbPos1_6 (FF)
   Destination:       rgbOut<9> (PAD)
   Source Clock:      posButton<6> rising
@@ -951,7 +1271,7 @@ Offset:              10.207ns (Levels of Logic = 9)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              10   0.447   1.104  rgbPos1_6 (rgbPos1_6)
+     FD:C->Q              11   0.447   1.130  rgbPos1_6 (rgbPos1_6)
      LUT4:I0->O            1   0.203   0.000  DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_lut<3> (DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_lut<3>)
      MUXCY:S->O            1   0.366   0.684  DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<3> (DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<3>)
      LUT5:I3->O           16   0.203   1.233  DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<4> (DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<4>)
@@ -962,14 +1282,14 @@ Offset:              10.207ns (Levels of Logic = 9)
      LUT5:I1->O            4   0.203   0.683  DisplayLed/Mmux_rgbOutput101 (rgbOut_9_OBUF)
      OBUF:I->O                 2.571          rgbOut_9_OBUF (rgbOut<9>)
     ----------------------------------------
-    Total                     10.207ns (4.753ns logic, 5.454ns route)
-                                       (46.6% logic, 53.4% route)
+    Total                     10.233ns (4.753ns logic, 5.480ns route)
+                                       (46.4% logic, 53.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'posButton<9>'
   Total number of paths / destination ports: 208 / 10
 -------------------------------------------------------------------------
-Offset:              8.900ns (Levels of Logic = 7)
+Offset:              8.927ns (Levels of Logic = 7)
   Source:            rgbPos1_9 (FF)
   Destination:       rgbOut<9> (PAD)
   Source Clock:      posButton<9> rising
@@ -978,7 +1298,7 @@ Offset:              8.900ns (Levels of Logic = 7)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               8   0.447   1.050  rgbPos1_9 (rgbPos1_9)
+     FD:C->Q               9   0.447   1.077  rgbPos1_9 (rgbPos1_9)
      LUT5:I1->O           16   0.203   1.233  DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<4> (DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<4>)
      LUT3:I0->O            1   0.205   0.924  DisplayLed/Mmux_GND_7_o_GND_7_o_mux_19_OUT_A81 (DisplayLed/Mmux_GND_7_o_GND_7_o_mux_19_OUT_rs_A<8>)
      LUT5:I0->O            1   0.203   0.000  DisplayLed/Mmux_GND_7_o_GND_7_o_mux_19_OUT_rs_lut<8> (DisplayLed/Mmux_GND_7_o_GND_7_o_mux_19_OUT_rs_lut<8>)
@@ -987,14 +1307,14 @@ Offset:              8.900ns (Levels of Logic = 7)
      LUT5:I1->O            4   0.203   0.683  DisplayLed/Mmux_rgbOutput101 (rgbOut_9_OBUF)
      OBUF:I->O                 2.571          rgbOut_9_OBUF (rgbOut<9>)
     ----------------------------------------
-    Total                      8.900ns (4.184ns logic, 4.716ns route)
-                                       (47.0% logic, 53.0% route)
+    Total                      8.927ns (4.184ns logic, 4.743ns route)
+                                       (46.9% logic, 53.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'posButton<8>'
   Total number of paths / destination ports: 208 / 10
 -------------------------------------------------------------------------
-Offset:              8.997ns (Levels of Logic = 7)
+Offset:              9.024ns (Levels of Logic = 7)
   Source:            rgbPos1_8 (FF)
   Destination:       rgbOut<9> (PAD)
   Source Clock:      posButton<8> rising
@@ -1003,7 +1323,7 @@ Offset:              8.997ns (Levels of Logic = 7)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               8   0.447   1.147  rgbPos1_8 (rgbPos1_8)
+     FD:C->Q               9   0.447   1.174  rgbPos1_8 (rgbPos1_8)
      LUT5:I0->O           16   0.203   1.233  DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<4> (DisplayLed/Mcompar_rgbPos2[10]_rgbPos1[10]_LessThan_17_o_cy<4>)
      LUT3:I0->O            1   0.205   0.924  DisplayLed/Mmux_GND_7_o_GND_7_o_mux_19_OUT_A81 (DisplayLed/Mmux_GND_7_o_GND_7_o_mux_19_OUT_rs_A<8>)
      LUT5:I0->O            1   0.203   0.000  DisplayLed/Mmux_GND_7_o_GND_7_o_mux_19_OUT_rs_lut<8> (DisplayLed/Mmux_GND_7_o_GND_7_o_mux_19_OUT_rs_lut<8>)
@@ -1012,8 +1332,8 @@ Offset:              8.997ns (Levels of Logic = 7)
      LUT5:I1->O            4   0.203   0.683  DisplayLed/Mmux_rgbOutput101 (rgbOut_9_OBUF)
      OBUF:I->O                 2.571          rgbOut_9_OBUF (rgbOut<9>)
     ----------------------------------------
-    Total                      8.997ns (4.184ns logic, 4.813ns route)
-                                       (46.5% logic, 53.5% route)
+    Total                      9.024ns (4.184ns logic, 4.840ns route)
+                                       (46.4% logic, 53.6% route)
 
 =========================================================================
 
@@ -1025,36 +1345,73 @@ Clock to Setup on destination clock DisplayLed/RGB_COUNTER/trigger
                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------+---------+---------+---------+---------+
-DisplayLed/RGB_COUNTER/trigger|    2.974|         |         |         |
-clk                           |    2.121|         |         |         |
-posButton<0>                  |    8.318|         |         |         |
-posButton<1>                  |    8.264|         |         |         |
-posButton<2>                  |    8.299|         |         |         |
-posButton<3>                  |    8.245|         |         |         |
-posButton<4>                  |    8.280|         |         |         |
-posButton<5>                  |    8.226|         |         |         |
-posButton<6>                  |    8.261|         |         |         |
-posButton<7>                  |    8.180|         |         |         |
-posButton<8>                  |    7.051|         |         |         |
-posButton<9>                  |    6.954|         |         |         |
+DisplayLed/RGB_COUNTER/trigger|    3.185|         |         |         |
+clk                           |    2.550|         |         |         |
+posButton<0>                  |    8.267|         |         |         |
+posButton<1>                  |    8.187|         |         |         |
+posButton<2>                  |    8.248|         |         |         |
+posButton<3>                  |    8.168|         |         |         |
+posButton<4>                  |    8.229|         |         |         |
+posButton<5>                  |    8.149|         |         |         |
+posButton<6>                  |    8.210|         |         |         |
+posButton<7>                  |    8.103|         |         |         |
+posButton<8>                  |    7.001|         |         |         |
+posButton<9>                  |    6.904|         |         |         |
 ------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+button<0>      |         |         |    1.591|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+button<1>      |         |         |    1.591|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+button<2>      |         |         |    1.621|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+button<3>      |         |         |    1.621|         |
+---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.660|         |         |         |
-posButton<0>   |    3.181|         |         |         |
-posButton<1>   |    3.283|         |         |         |
-posButton<2>   |    3.409|         |         |         |
-posButton<3>   |    3.426|         |         |         |
+button<0>      |         |    4.669|         |         |
+button<1>      |         |    4.771|         |         |
+button<2>      |         |    4.927|         |         |
+button<3>      |         |    3.791|         |         |
+clk            |    4.430|         |         |         |
+posButton<0>   |    3.309|         |         |         |
+posButton<1>   |    3.435|         |         |         |
+posButton<2>   |    3.452|         |         |         |
+posButton<3>   |    3.549|         |         |         |
 posButton<4>   |    3.617|         |         |         |
 posButton<5>   |    3.597|         |         |         |
 posButton<6>   |    3.500|         |         |         |
 posButton<7>   |    3.456|         |         |         |
 posButton<8>   |    3.301|         |         |         |
 posButton<9>   |    3.199|         |         |         |
+state_FSM_FFd1 |         |    3.601|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<0>
@@ -1062,8 +1419,8 @@ Clock to Setup on destination clock posButton<0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.153|         |         |         |
-posButton<0>   |    1.839|         |         |         |
+clk            |    2.416|         |         |         |
+posButton<0>   |    1.829|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<1>
@@ -1071,8 +1428,8 @@ Clock to Setup on destination clock posButton<1>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.153|         |         |         |
-posButton<1>   |    1.839|         |         |         |
+clk            |    2.416|         |         |         |
+posButton<1>   |    1.829|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<2>
@@ -1080,8 +1437,8 @@ Clock to Setup on destination clock posButton<2>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.153|         |         |         |
-posButton<2>   |    1.839|         |         |         |
+clk            |    2.416|         |         |         |
+posButton<2>   |    1.829|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<3>
@@ -1089,8 +1446,8 @@ Clock to Setup on destination clock posButton<3>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.153|         |         |         |
-posButton<3>   |    1.839|         |         |         |
+clk            |    2.416|         |         |         |
+posButton<3>   |    1.829|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<4>
@@ -1098,8 +1455,8 @@ Clock to Setup on destination clock posButton<4>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.153|         |         |         |
-posButton<4>   |    1.839|         |         |         |
+clk            |    2.416|         |         |         |
+posButton<4>   |    1.829|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<5>
@@ -1107,8 +1464,8 @@ Clock to Setup on destination clock posButton<5>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.153|         |         |         |
-posButton<5>   |    1.839|         |         |         |
+clk            |    2.416|         |         |         |
+posButton<5>   |    1.829|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<6>
@@ -1116,8 +1473,8 @@ Clock to Setup on destination clock posButton<6>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.153|         |         |         |
-posButton<6>   |    1.839|         |         |         |
+clk            |    2.416|         |         |         |
+posButton<6>   |    1.829|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<7>
@@ -1125,8 +1482,8 @@ Clock to Setup on destination clock posButton<7>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.153|         |         |         |
-posButton<7>   |    1.812|         |         |         |
+clk            |    2.416|         |         |         |
+posButton<7>   |    1.802|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<8>
@@ -1134,8 +1491,8 @@ Clock to Setup on destination clock posButton<8>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.153|         |         |         |
-posButton<8>   |    1.785|         |         |         |
+clk            |    2.416|         |         |         |
+posButton<8>   |    1.773|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<9>
@@ -1143,21 +1500,38 @@ Clock to Setup on destination clock posButton<9>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.153|         |         |         |
-posButton<9>   |    1.785|         |         |         |
+clk            |    2.416|         |         |         |
+posButton<9>   |    1.773|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state_FSM_FFd1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+posButton<0>   |         |         |    1.100|         |
+posButton<1>   |         |         |    1.100|         |
+posButton<2>   |         |         |    1.100|         |
+posButton<3>   |         |         |    1.100|         |
+posButton<4>   |         |         |    1.100|         |
+posButton<5>   |         |         |    1.100|         |
+posButton<6>   |         |         |    1.100|         |
+posButton<7>   |         |         |    1.100|         |
+posButton<8>   |         |         |    1.100|         |
+posButton<9>   |         |         |    1.100|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.70 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.91 secs
  
 --> 
 
 Total memory usage is 333048 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   10 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :   64 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
 

@@ -37,8 +37,17 @@ Clock clk to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-ledState<0> |        10.029(R)|      SLOW  |         5.425(R)|      FAST  |clk_BUFGP         |   0.000|
-ledState<1> |         9.277(R)|      SLOW  |         4.945(R)|      FAST  |clk_BUFGP         |   0.000|
+ledState<0> |         9.344(R)|      SLOW  |         4.974(R)|      FAST  |clk_BUFGP         |   0.000|
+ledState<1> |         9.435(R)|      SLOW  |         5.122(R)|      FAST  |clk_BUFGP         |   0.000|
+pricecom<0> |         7.686(R)|      SLOW  |         4.098(R)|      FAST  |clk_BUFGP         |   0.000|
+pricecom<1> |         7.766(R)|      SLOW  |         4.133(R)|      FAST  |clk_BUFGP         |   0.000|
+priceseg<0> |         9.171(R)|      SLOW  |         4.617(R)|      FAST  |clk_BUFGP         |   0.000|
+priceseg<1> |         9.183(R)|      SLOW  |         4.661(R)|      FAST  |clk_BUFGP         |   0.000|
+priceseg<2> |         9.185(R)|      SLOW  |         4.663(R)|      FAST  |clk_BUFGP         |   0.000|
+priceseg<3> |         9.128(R)|      SLOW  |         4.669(R)|      FAST  |clk_BUFGP         |   0.000|
+priceseg<4> |         8.972(R)|      SLOW  |         4.507(R)|      FAST  |clk_BUFGP         |   0.000|
+priceseg<5> |         8.692(R)|      SLOW  |         4.414(R)|      FAST  |clk_BUFGP         |   0.000|
+priceseg<6> |         8.659(R)|      SLOW  |         4.298(R)|      FAST  |clk_BUFGP         |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock posButton<0> to Pad
@@ -46,16 +55,16 @@ Clock posButton<0> to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-rgbOut<0>   |        12.633(R)|      SLOW  |         5.604(R)|      FAST  |posButton_0_IBUF  |   0.000|
-rgbOut<1>   |        12.726(R)|      SLOW  |         6.038(R)|      FAST  |posButton_0_IBUF  |   0.000|
-rgbOut<2>   |        13.136(R)|      SLOW  |         6.111(R)|      FAST  |posButton_0_IBUF  |   0.000|
-rgbOut<3>   |        12.832(R)|      SLOW  |         5.807(R)|      FAST  |posButton_0_IBUF  |   0.000|
-rgbOut<4>   |        12.595(R)|      SLOW  |         5.758(R)|      FAST  |posButton_0_IBUF  |   0.000|
-rgbOut<5>   |        12.736(R)|      SLOW  |         5.787(R)|      FAST  |posButton_0_IBUF  |   0.000|
-rgbOut<6>   |        12.686(R)|      SLOW  |         5.725(R)|      FAST  |posButton_0_IBUF  |   0.000|
-rgbOut<7>   |        12.491(R)|      SLOW  |         5.726(R)|      FAST  |posButton_0_IBUF  |   0.000|
-rgbOut<8>   |        13.435(R)|      SLOW  |         6.109(R)|      FAST  |posButton_0_IBUF  |   0.000|
-rgbOut<9>   |        13.623(R)|      SLOW  |         6.331(R)|      FAST  |posButton_0_IBUF  |   0.000|
+rgbOut<0>   |        12.698(R)|      SLOW  |         5.689(R)|      FAST  |posButton_0_IBUF  |   0.000|
+rgbOut<1>   |        12.645(R)|      SLOW  |         6.134(R)|      FAST  |posButton_0_IBUF  |   0.000|
+rgbOut<2>   |        12.599(R)|      SLOW  |         6.147(R)|      FAST  |posButton_0_IBUF  |   0.000|
+rgbOut<3>   |        12.663(R)|      SLOW  |         6.143(R)|      FAST  |posButton_0_IBUF  |   0.000|
+rgbOut<4>   |        12.761(R)|      SLOW  |         6.228(R)|      FAST  |posButton_0_IBUF  |   0.000|
+rgbOut<5>   |        12.545(R)|      SLOW  |         5.992(R)|      FAST  |posButton_0_IBUF  |   0.000|
+rgbOut<6>   |        12.907(R)|      SLOW  |         6.225(R)|      FAST  |posButton_0_IBUF  |   0.000|
+rgbOut<7>   |        12.876(R)|      SLOW  |         6.247(R)|      FAST  |posButton_0_IBUF  |   0.000|
+rgbOut<8>   |        13.648(R)|      SLOW  |         6.319(R)|      FAST  |posButton_0_IBUF  |   0.000|
+rgbOut<9>   |        13.980(R)|      SLOW  |         6.582(R)|      FAST  |posButton_0_IBUF  |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock posButton<1> to Pad
@@ -63,16 +72,16 @@ Clock posButton<1> to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-rgbOut<0>   |        12.416(R)|      SLOW  |         5.823(R)|      FAST  |posButton_1_IBUF  |   0.000|
-rgbOut<1>   |        12.509(R)|      SLOW  |         5.629(R)|      FAST  |posButton_1_IBUF  |   0.000|
-rgbOut<2>   |        12.919(R)|      SLOW  |         5.930(R)|      FAST  |posButton_1_IBUF  |   0.000|
-rgbOut<3>   |        12.615(R)|      SLOW  |         5.845(R)|      FAST  |posButton_1_IBUF  |   0.000|
-rgbOut<4>   |        12.378(R)|      SLOW  |         5.836(R)|      FAST  |posButton_1_IBUF  |   0.000|
-rgbOut<5>   |        12.519(R)|      SLOW  |         5.606(R)|      FAST  |posButton_1_IBUF  |   0.000|
-rgbOut<6>   |        12.469(R)|      SLOW  |         5.591(R)|      FAST  |posButton_1_IBUF  |   0.000|
-rgbOut<7>   |        12.274(R)|      SLOW  |         5.721(R)|      FAST  |posButton_1_IBUF  |   0.000|
-rgbOut<8>   |        13.218(R)|      SLOW  |         5.928(R)|      FAST  |posButton_1_IBUF  |   0.000|
-rgbOut<9>   |        13.406(R)|      SLOW  |         6.463(R)|      FAST  |posButton_1_IBUF  |   0.000|
+rgbOut<0>   |        12.419(R)|      SLOW  |         6.308(R)|      FAST  |posButton_1_IBUF  |   0.000|
+rgbOut<1>   |        12.366(R)|      SLOW  |         5.685(R)|      FAST  |posButton_1_IBUF  |   0.000|
+rgbOut<2>   |        12.320(R)|      SLOW  |         5.937(R)|      FAST  |posButton_1_IBUF  |   0.000|
+rgbOut<3>   |        12.384(R)|      SLOW  |         5.933(R)|      FAST  |posButton_1_IBUF  |   0.000|
+rgbOut<4>   |        12.482(R)|      SLOW  |         5.940(R)|      FAST  |posButton_1_IBUF  |   0.000|
+rgbOut<5>   |        12.266(R)|      SLOW  |         5.780(R)|      FAST  |posButton_1_IBUF  |   0.000|
+rgbOut<6>   |        12.628(R)|      SLOW  |         5.914(R)|      FAST  |posButton_1_IBUF  |   0.000|
+rgbOut<7>   |        12.597(R)|      SLOW  |         5.946(R)|      FAST  |posButton_1_IBUF  |   0.000|
+rgbOut<8>   |        13.369(R)|      SLOW  |         6.107(R)|      FAST  |posButton_1_IBUF  |   0.000|
+rgbOut<9>   |        13.701(R)|      SLOW  |         6.370(R)|      FAST  |posButton_1_IBUF  |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock posButton<2> to Pad
@@ -80,16 +89,16 @@ Clock posButton<2> to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-rgbOut<0>   |        12.962(R)|      SLOW  |         5.614(R)|      FAST  |posButton_2_IBUF  |   0.000|
-rgbOut<1>   |        13.055(R)|      SLOW  |         5.856(R)|      FAST  |posButton_2_IBUF  |   0.000|
-rgbOut<2>   |        13.465(R)|      SLOW  |         5.291(R)|      FAST  |posButton_2_IBUF  |   0.000|
-rgbOut<3>   |        13.161(R)|      SLOW  |         5.625(R)|      FAST  |posButton_2_IBUF  |   0.000|
-rgbOut<4>   |        12.924(R)|      SLOW  |         5.576(R)|      FAST  |posButton_2_IBUF  |   0.000|
-rgbOut<5>   |        13.065(R)|      SLOW  |         5.651(R)|      FAST  |posButton_2_IBUF  |   0.000|
-rgbOut<6>   |        13.015(R)|      SLOW  |         5.543(R)|      FAST  |posButton_2_IBUF  |   0.000|
-rgbOut<7>   |        12.820(R)|      SLOW  |         5.544(R)|      FAST  |posButton_2_IBUF  |   0.000|
-rgbOut<8>   |        13.764(R)|      SLOW  |         6.073(R)|      FAST  |posButton_2_IBUF  |   0.000|
-rgbOut<9>   |        13.952(R)|      SLOW  |         6.220(R)|      FAST  |posButton_2_IBUF  |   0.000|
+rgbOut<0>   |        13.495(R)|      SLOW  |         6.835(R)|      FAST  |posButton_2_IBUF  |   0.000|
+rgbOut<1>   |        13.442(R)|      SLOW  |         6.673(R)|      FAST  |posButton_2_IBUF  |   0.000|
+rgbOut<2>   |        13.396(R)|      SLOW  |         5.510(R)|      FAST  |posButton_2_IBUF  |   0.000|
+rgbOut<3>   |        13.460(R)|      SLOW  |         6.651(R)|      FAST  |posButton_2_IBUF  |   0.000|
+rgbOut<4>   |        13.558(R)|      SLOW  |         6.467(R)|      FAST  |posButton_2_IBUF  |   0.000|
+rgbOut<5>   |        13.342(R)|      SLOW  |         6.501(R)|      FAST  |posButton_2_IBUF  |   0.000|
+rgbOut<6>   |        13.704(R)|      SLOW  |         6.441(R)|      FAST  |posButton_2_IBUF  |   0.000|
+rgbOut<7>   |        13.673(R)|      SLOW  |         6.473(R)|      FAST  |posButton_2_IBUF  |   0.000|
+rgbOut<8>   |        14.445(R)|      SLOW  |         6.836(R)|      FAST  |posButton_2_IBUF  |   0.000|
+rgbOut<9>   |        14.777(R)|      SLOW  |         7.057(R)|      FAST  |posButton_2_IBUF  |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock posButton<3> to Pad
@@ -97,16 +106,16 @@ Clock posButton<3> to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-rgbOut<0>   |        14.692(R)|      SLOW  |         6.868(R)|      FAST  |posButton_3_BUFGP |   0.000|
-rgbOut<1>   |        14.785(R)|      SLOW  |         7.110(R)|      FAST  |posButton_3_BUFGP |   0.000|
-rgbOut<2>   |        15.195(R)|      SLOW  |         7.340(R)|      FAST  |posButton_3_BUFGP |   0.000|
-rgbOut<3>   |        14.891(R)|      SLOW  |         6.477(R)|      FAST  |posButton_3_BUFGP |   0.000|
-rgbOut<4>   |        14.654(R)|      SLOW  |         6.830(R)|      FAST  |posButton_3_BUFGP |   0.000|
-rgbOut<5>   |        14.795(R)|      SLOW  |         6.905(R)|      FAST  |posButton_3_BUFGP |   0.000|
-rgbOut<6>   |        14.745(R)|      SLOW  |         6.797(R)|      FAST  |posButton_3_BUFGP |   0.000|
-rgbOut<7>   |        14.550(R)|      SLOW  |         6.798(R)|      FAST  |posButton_3_BUFGP |   0.000|
-rgbOut<8>   |        15.494(R)|      SLOW  |         7.249(R)|      FAST  |posButton_3_BUFGP |   0.000|
-rgbOut<9>   |        15.682(R)|      SLOW  |         7.381(R)|      FAST  |posButton_3_BUFGP |   0.000|
+rgbOut<0>   |        15.495(R)|      SLOW  |         7.989(R)|      FAST  |posButton_3_BUFGP |   0.000|
+rgbOut<1>   |        15.442(R)|      SLOW  |         7.827(R)|      FAST  |posButton_3_BUFGP |   0.000|
+rgbOut<2>   |        15.396(R)|      SLOW  |         7.921(R)|      FAST  |posButton_3_BUFGP |   0.000|
+rgbOut<3>   |        15.460(R)|      SLOW  |         6.573(R)|      FAST  |posButton_3_BUFGP |   0.000|
+rgbOut<4>   |        15.558(R)|      SLOW  |         7.621(R)|      FAST  |posButton_3_BUFGP |   0.000|
+rgbOut<5>   |        15.342(R)|      SLOW  |         7.422(R)|      FAST  |posButton_3_BUFGP |   0.000|
+rgbOut<6>   |        15.704(R)|      SLOW  |         7.595(R)|      FAST  |posButton_3_BUFGP |   0.000|
+rgbOut<7>   |        15.673(R)|      SLOW  |         7.627(R)|      FAST  |posButton_3_BUFGP |   0.000|
+rgbOut<8>   |        16.445(R)|      SLOW  |         7.848(R)|      FAST  |posButton_3_BUFGP |   0.000|
+rgbOut<9>   |        16.777(R)|      SLOW  |         8.111(R)|      FAST  |posButton_3_BUFGP |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock posButton<4> to Pad
@@ -114,16 +123,16 @@ Clock posButton<4> to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-rgbOut<0>   |        14.456(R)|      SLOW  |         7.086(R)|      FAST  |posButton_4_BUFGP |   0.000|
-rgbOut<1>   |        14.549(R)|      SLOW  |         7.202(R)|      FAST  |posButton_4_BUFGP |   0.000|
-rgbOut<2>   |        14.959(R)|      SLOW  |         7.193(R)|      FAST  |posButton_4_BUFGP |   0.000|
-rgbOut<3>   |        14.655(R)|      SLOW  |         7.108(R)|      FAST  |posButton_4_BUFGP |   0.000|
-rgbOut<4>   |        14.418(R)|      SLOW  |         6.254(R)|      FAST  |posButton_4_BUFGP |   0.000|
-rgbOut<5>   |        14.559(R)|      SLOW  |         6.644(R)|      FAST  |posButton_4_BUFGP |   0.000|
-rgbOut<6>   |        14.509(R)|      SLOW  |         6.707(R)|      FAST  |posButton_4_BUFGP |   0.000|
-rgbOut<7>   |        14.314(R)|      SLOW  |         6.544(R)|      FAST  |posButton_4_BUFGP |   0.000|
-rgbOut<8>   |        15.258(R)|      SLOW  |         6.950(R)|      FAST  |posButton_4_BUFGP |   0.000|
-rgbOut<9>   |        15.446(R)|      SLOW  |         7.082(R)|      FAST  |posButton_4_BUFGP |   0.000|
+rgbOut<0>   |        14.985(R)|      SLOW  |         7.984(R)|      FAST  |posButton_4_BUFGP |   0.000|
+rgbOut<1>   |        14.932(R)|      SLOW  |         7.822(R)|      FAST  |posButton_4_BUFGP |   0.000|
+rgbOut<2>   |        14.886(R)|      SLOW  |         7.843(R)|      FAST  |posButton_4_BUFGP |   0.000|
+rgbOut<3>   |        14.950(R)|      SLOW  |         7.800(R)|      FAST  |posButton_4_BUFGP |   0.000|
+rgbOut<4>   |        15.048(R)|      SLOW  |         6.074(R)|      FAST  |posButton_4_BUFGP |   0.000|
+rgbOut<5>   |        14.832(R)|      SLOW  |         7.190(R)|      FAST  |posButton_4_BUFGP |   0.000|
+rgbOut<6>   |        15.194(R)|      SLOW  |         7.485(R)|      FAST  |posButton_4_BUFGP |   0.000|
+rgbOut<7>   |        15.163(R)|      SLOW  |         7.516(R)|      FAST  |posButton_4_BUFGP |   0.000|
+rgbOut<8>   |        15.935(R)|      SLOW  |         7.638(R)|      FAST  |posButton_4_BUFGP |   0.000|
+rgbOut<9>   |        16.267(R)|      SLOW  |         7.901(R)|      FAST  |posButton_4_BUFGP |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock posButton<5> to Pad
@@ -131,16 +140,16 @@ Clock posButton<5> to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-rgbOut<0>   |        14.199(R)|      SLOW  |         6.603(R)|      FAST  |posButton_5_BUFGP |   0.000|
-rgbOut<1>   |        14.292(R)|      SLOW  |         6.828(R)|      FAST  |posButton_5_BUFGP |   0.000|
-rgbOut<2>   |        14.702(R)|      SLOW  |         6.819(R)|      FAST  |posButton_5_BUFGP |   0.000|
-rgbOut<3>   |        14.398(R)|      SLOW  |         6.614(R)|      FAST  |posButton_5_BUFGP |   0.000|
-rgbOut<4>   |        14.161(R)|      SLOW  |         6.565(R)|      FAST  |posButton_5_BUFGP |   0.000|
-rgbOut<5>   |        14.302(R)|      SLOW  |         6.026(R)|      FAST  |posButton_5_BUFGP |   0.000|
-rgbOut<6>   |        14.252(R)|      SLOW  |         6.480(R)|      FAST  |posButton_5_BUFGP |   0.000|
-rgbOut<7>   |        14.057(R)|      SLOW  |         6.498(R)|      FAST  |posButton_5_BUFGP |   0.000|
-rgbOut<8>   |        15.001(R)|      SLOW  |         6.817(R)|      FAST  |posButton_5_BUFGP |   0.000|
-rgbOut<9>   |        15.189(R)|      SLOW  |         7.043(R)|      FAST  |posButton_5_BUFGP |   0.000|
+rgbOut<0>   |        15.181(R)|      SLOW  |         7.731(R)|      FAST  |posButton_5_BUFGP |   0.000|
+rgbOut<1>   |        15.128(R)|      SLOW  |         7.582(R)|      FAST  |posButton_5_BUFGP |   0.000|
+rgbOut<2>   |        15.082(R)|      SLOW  |         7.468(R)|      FAST  |posButton_5_BUFGP |   0.000|
+rgbOut<3>   |        15.146(R)|      SLOW  |         7.484(R)|      FAST  |posButton_5_BUFGP |   0.000|
+rgbOut<4>   |        15.244(R)|      SLOW  |         7.376(R)|      FAST  |posButton_5_BUFGP |   0.000|
+rgbOut<5>   |        15.028(R)|      SLOW  |         6.108(R)|      FAST  |posButton_5_BUFGP |   0.000|
+rgbOut<6>   |        15.390(R)|      SLOW  |         7.263(R)|      FAST  |posButton_5_BUFGP |   0.000|
+rgbOut<7>   |        15.359(R)|      SLOW  |         7.310(R)|      FAST  |posButton_5_BUFGP |   0.000|
+rgbOut<8>   |        16.131(R)|      SLOW  |         7.528(R)|      FAST  |posButton_5_BUFGP |   0.000|
+rgbOut<9>   |        16.463(R)|      SLOW  |         7.719(R)|      FAST  |posButton_5_BUFGP |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock posButton<6> to Pad
@@ -148,16 +157,16 @@ Clock posButton<6> to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-rgbOut<0>   |        14.583(R)|      SLOW  |         7.251(R)|      FAST  |posButton_6_BUFGP |   0.000|
-rgbOut<1>   |        14.676(R)|      SLOW  |         7.493(R)|      FAST  |posButton_6_BUFGP |   0.000|
-rgbOut<2>   |        15.086(R)|      SLOW  |         7.489(R)|      FAST  |posButton_6_BUFGP |   0.000|
-rgbOut<3>   |        14.782(R)|      SLOW  |         7.262(R)|      FAST  |posButton_6_BUFGP |   0.000|
-rgbOut<4>   |        14.545(R)|      SLOW  |         7.213(R)|      FAST  |posButton_6_BUFGP |   0.000|
-rgbOut<5>   |        14.686(R)|      SLOW  |         7.165(R)|      FAST  |posButton_6_BUFGP |   0.000|
-rgbOut<6>   |        14.636(R)|      SLOW  |         5.922(R)|      FAST  |posButton_6_BUFGP |   0.000|
-rgbOut<7>   |        14.441(R)|      SLOW  |         6.703(R)|      FAST  |posButton_6_BUFGP |   0.000|
-rgbOut<8>   |        15.385(R)|      SLOW  |         7.140(R)|      FAST  |posButton_6_BUFGP |   0.000|
-rgbOut<9>   |        15.573(R)|      SLOW  |         7.272(R)|      FAST  |posButton_6_BUFGP |   0.000|
+rgbOut<0>   |        15.473(R)|      SLOW  |         8.174(R)|      FAST  |posButton_6_BUFGP |   0.000|
+rgbOut<1>   |        15.420(R)|      SLOW  |         8.012(R)|      FAST  |posButton_6_BUFGP |   0.000|
+rgbOut<2>   |        15.374(R)|      SLOW  |         8.192(R)|      FAST  |posButton_6_BUFGP |   0.000|
+rgbOut<3>   |        15.438(R)|      SLOW  |         7.990(R)|      FAST  |posButton_6_BUFGP |   0.000|
+rgbOut<4>   |        15.536(R)|      SLOW  |         7.806(R)|      FAST  |posButton_6_BUFGP |   0.000|
+rgbOut<5>   |        15.320(R)|      SLOW  |         7.840(R)|      FAST  |posButton_6_BUFGP |   0.000|
+rgbOut<6>   |        15.682(R)|      SLOW  |         6.975(R)|      FAST  |posButton_6_BUFGP |   0.000|
+rgbOut<7>   |        15.651(R)|      SLOW  |         7.575(R)|      FAST  |posButton_6_BUFGP |   0.000|
+rgbOut<8>   |        16.423(R)|      SLOW  |         7.705(R)|      FAST  |posButton_6_BUFGP |   0.000|
+rgbOut<9>   |        16.755(R)|      SLOW  |         7.968(R)|      FAST  |posButton_6_BUFGP |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock posButton<7> to Pad
@@ -165,16 +174,16 @@ Clock posButton<7> to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-rgbOut<0>   |        14.215(R)|      SLOW  |         6.998(R)|      FAST  |posButton_7_BUFGP |   0.000|
-rgbOut<1>   |        14.308(R)|      SLOW  |         7.114(R)|      FAST  |posButton_7_BUFGP |   0.000|
-rgbOut<2>   |        14.718(R)|      SLOW  |         7.105(R)|      FAST  |posButton_7_BUFGP |   0.000|
-rgbOut<3>   |        14.414(R)|      SLOW  |         7.020(R)|      FAST  |posButton_7_BUFGP |   0.000|
-rgbOut<4>   |        14.177(R)|      SLOW  |         7.048(R)|      FAST  |posButton_7_BUFGP |   0.000|
-rgbOut<5>   |        14.318(R)|      SLOW  |         6.781(R)|      FAST  |posButton_7_BUFGP |   0.000|
-rgbOut<6>   |        14.268(R)|      SLOW  |         6.766(R)|      FAST  |posButton_7_BUFGP |   0.000|
-rgbOut<7>   |        14.073(R)|      SLOW  |         6.185(R)|      FAST  |posButton_7_BUFGP |   0.000|
-rgbOut<8>   |        15.017(R)|      SLOW  |         6.955(R)|      FAST  |posButton_7_BUFGP |   0.000|
-rgbOut<9>   |        15.205(R)|      SLOW  |         7.087(R)|      FAST  |posButton_7_BUFGP |   0.000|
+rgbOut<0>   |        15.421(R)|      SLOW  |         8.090(R)|      FAST  |posButton_7_BUFGP |   0.000|
+rgbOut<1>   |        15.368(R)|      SLOW  |         8.094(R)|      FAST  |posButton_7_BUFGP |   0.000|
+rgbOut<2>   |        15.322(R)|      SLOW  |         7.827(R)|      FAST  |posButton_7_BUFGP |   0.000|
+rgbOut<3>   |        15.386(R)|      SLOW  |         7.843(R)|      FAST  |posButton_7_BUFGP |   0.000|
+rgbOut<4>   |        15.484(R)|      SLOW  |         7.838(R)|      FAST  |posButton_7_BUFGP |   0.000|
+rgbOut<5>   |        15.268(R)|      SLOW  |         7.851(R)|      FAST  |posButton_7_BUFGP |   0.000|
+rgbOut<6>   |        15.630(R)|      SLOW  |         7.622(R)|      FAST  |posButton_7_BUFGP |   0.000|
+rgbOut<7>   |        15.599(R)|      SLOW  |         6.184(R)|      FAST  |posButton_7_BUFGP |   0.000|
+rgbOut<8>   |        16.371(R)|      SLOW  |         7.648(R)|      FAST  |posButton_7_BUFGP |   0.000|
+rgbOut<9>   |        16.703(R)|      SLOW  |         7.911(R)|      FAST  |posButton_7_BUFGP |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock posButton<8> to Pad
@@ -182,16 +191,16 @@ Clock posButton<8> to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-rgbOut<0>   |        12.794(R)|      SLOW  |         6.914(R)|      FAST  |posButton_8_BUFGP |   0.000|
-rgbOut<1>   |        12.887(R)|      SLOW  |         7.030(R)|      FAST  |posButton_8_BUFGP |   0.000|
-rgbOut<2>   |        13.297(R)|      SLOW  |         7.021(R)|      FAST  |posButton_8_BUFGP |   0.000|
-rgbOut<3>   |        12.993(R)|      SLOW  |         6.936(R)|      FAST  |posButton_8_BUFGP |   0.000|
-rgbOut<4>   |        12.756(R)|      SLOW  |         6.910(R)|      FAST  |posButton_8_BUFGP |   0.000|
-rgbOut<5>   |        12.897(R)|      SLOW  |         6.697(R)|      FAST  |posButton_8_BUFGP |   0.000|
-rgbOut<6>   |        12.847(R)|      SLOW  |         6.682(R)|      FAST  |posButton_8_BUFGP |   0.000|
-rgbOut<7>   |        12.652(R)|      SLOW  |         6.623(R)|      FAST  |posButton_8_BUFGP |   0.000|
-rgbOut<8>   |        13.679(R)|      SLOW  |         6.337(R)|      FAST  |posButton_8_BUFGP |   0.000|
-rgbOut<9>   |        13.784(R)|      SLOW  |         6.611(R)|      FAST  |posButton_8_BUFGP |   0.000|
+rgbOut<0>   |        13.927(R)|      SLOW  |         7.655(R)|      FAST  |posButton_8_BUFGP |   0.000|
+rgbOut<1>   |        14.121(R)|      SLOW  |         7.493(R)|      FAST  |posButton_8_BUFGP |   0.000|
+rgbOut<2>   |        13.681(R)|      SLOW  |         7.673(R)|      FAST  |posButton_8_BUFGP |   0.000|
+rgbOut<3>   |        13.745(R)|      SLOW  |         7.471(R)|      FAST  |posButton_8_BUFGP |   0.000|
+rgbOut<4>   |        13.843(R)|      SLOW  |         7.287(R)|      FAST  |posButton_8_BUFGP |   0.000|
+rgbOut<5>   |        13.627(R)|      SLOW  |         7.321(R)|      FAST  |posButton_8_BUFGP |   0.000|
+rgbOut<6>   |        13.989(R)|      SLOW  |         7.261(R)|      FAST  |posButton_8_BUFGP |   0.000|
+rgbOut<7>   |        13.958(R)|      SLOW  |         7.293(R)|      FAST  |posButton_8_BUFGP |   0.000|
+rgbOut<8>   |        14.730(R)|      SLOW  |         7.157(R)|      FAST  |posButton_8_BUFGP |   0.000|
+rgbOut<9>   |        15.062(R)|      SLOW  |         7.670(R)|      FAST  |posButton_8_BUFGP |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock posButton<9> to Pad
@@ -199,34 +208,70 @@ Clock posButton<9> to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-rgbOut<0>   |        12.931(R)|      SLOW  |         6.943(R)|      FAST  |posButton_9_BUFGP |   0.000|
-rgbOut<1>   |        13.024(R)|      SLOW  |         7.061(R)|      FAST  |posButton_9_BUFGP |   0.000|
-rgbOut<2>   |        13.434(R)|      SLOW  |         7.122(R)|      FAST  |posButton_9_BUFGP |   0.000|
-rgbOut<3>   |        13.130(R)|      SLOW  |         6.954(R)|      FAST  |posButton_9_BUFGP |   0.000|
-rgbOut<4>   |        12.893(R)|      SLOW  |         6.856(R)|      FAST  |posButton_9_BUFGP |   0.000|
-rgbOut<5>   |        13.034(R)|      SLOW  |         6.798(R)|      FAST  |posButton_9_BUFGP |   0.000|
-rgbOut<6>   |        12.984(R)|      SLOW  |         6.762(R)|      FAST  |posButton_9_BUFGP |   0.000|
-rgbOut<7>   |        12.789(R)|      SLOW  |         6.569(R)|      FAST  |posButton_9_BUFGP |   0.000|
-rgbOut<8>   |        13.733(R)|      SLOW  |         6.623(R)|      FAST  |posButton_9_BUFGP |   0.000|
-rgbOut<9>   |        13.921(R)|      SLOW  |         6.251(R)|      FAST  |posButton_9_BUFGP |   0.000|
+rgbOut<0>   |        13.597(R)|      SLOW  |         7.568(R)|      FAST  |posButton_9_BUFGP |   0.000|
+rgbOut<1>   |        13.669(R)|      SLOW  |         7.453(R)|      FAST  |posButton_9_BUFGP |   0.000|
+rgbOut<2>   |        13.614(R)|      SLOW  |         7.389(R)|      FAST  |posButton_9_BUFGP |   0.000|
+rgbOut<3>   |        13.409(R)|      SLOW  |         7.352(R)|      FAST  |posButton_9_BUFGP |   0.000|
+rgbOut<4>   |        13.507(R)|      SLOW  |         7.443(R)|      FAST  |posButton_9_BUFGP |   0.000|
+rgbOut<5>   |        13.291(R)|      SLOW  |         7.207(R)|      FAST  |posButton_9_BUFGP |   0.000|
+rgbOut<6>   |        13.653(R)|      SLOW  |         7.321(R)|      FAST  |posButton_9_BUFGP |   0.000|
+rgbOut<7>   |        13.622(R)|      SLOW  |         7.368(R)|      FAST  |posButton_9_BUFGP |   0.000|
+rgbOut<8>   |        14.394(R)|      SLOW  |         7.036(R)|      FAST  |posButton_9_BUFGP |   0.000|
+rgbOut<9>   |        14.726(R)|      SLOW  |         6.939(R)|      FAST  |posButton_9_BUFGP |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock button<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+button<0>      |         |         |         |    1.580|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+button<1>      |         |         |         |    1.326|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+button<2>      |         |         |         |    1.161|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+button<3>      |         |         |         |    1.580|
+---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.296|         |         |         |
-posButton<0>   |    3.993|         |         |         |
-posButton<1>   |    4.073|         |         |         |
-posButton<2>   |    4.213|         |         |         |
-posButton<3>   |    6.418|         |         |         |
-posButton<4>   |    7.041|         |         |         |
-posButton<5>   |    6.238|         |         |         |
-posButton<6>   |    6.835|         |         |         |
-posButton<7>   |    6.790|         |         |         |
-posButton<8>   |    6.654|         |         |         |
-posButton<9>   |    6.971|         |         |         |
+button<0>      |         |    5.332|         |         |
+button<1>      |         |    4.946|         |         |
+button<2>      |         |    5.339|         |         |
+button<3>      |         |    4.777|         |         |
+clk            |    4.423|         |         |         |
+posButton<0>   |    4.834|         |         |         |
+posButton<1>   |    4.374|         |         |         |
+posButton<2>   |    5.013|         |         |         |
+posButton<3>   |    7.138|         |         |         |
+posButton<4>   |    6.985|         |         |         |
+posButton<5>   |    6.669|         |         |         |
+posButton<6>   |    6.622|         |         |         |
+posButton<7>   |    7.256|         |         |         |
+posButton<8>   |    6.946|         |         |         |
+posButton<9>   |    6.503|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<0>
@@ -234,8 +279,8 @@ Clock to Setup on destination clock posButton<0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    1.318|         |         |         |
-posButton<0>   |    1.324|         |         |         |
+clk            |    1.136|         |         |         |
+posButton<0>   |    1.188|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<1>
@@ -243,8 +288,8 @@ Clock to Setup on destination clock posButton<1>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    1.376|         |         |         |
-posButton<1>   |    1.263|         |         |         |
+clk            |    1.357|         |         |         |
+posButton<1>   |    1.526|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<2>
@@ -252,8 +297,8 @@ Clock to Setup on destination clock posButton<2>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    1.053|         |         |         |
-posButton<2>   |    1.331|         |         |         |
+clk            |    1.344|         |         |         |
+posButton<2>   |    1.197|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<3>
@@ -261,8 +306,8 @@ Clock to Setup on destination clock posButton<3>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   -0.934|         |         |         |
-posButton<3>   |    1.321|         |         |         |
+clk            |    0.351|         |         |         |
+posButton<3>   |    1.802|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<4>
@@ -270,8 +315,8 @@ Clock to Setup on destination clock posButton<4>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   -0.463|         |         |         |
-posButton<4>   |    1.291|         |         |         |
+clk            |    0.060|         |         |         |
+posButton<4>   |    1.201|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<5>
@@ -279,8 +324,8 @@ Clock to Setup on destination clock posButton<5>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   -0.346|         |         |         |
-posButton<5>   |    1.295|         |         |         |
+clk            |    0.381|         |         |         |
+posButton<5>   |    1.819|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<6>
@@ -288,8 +333,8 @@ Clock to Setup on destination clock posButton<6>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   -0.530|         |         |         |
-posButton<6>   |    1.291|         |         |         |
+clk            |   -0.216|         |         |         |
+posButton<6>   |    1.177|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<7>
@@ -297,8 +342,8 @@ Clock to Setup on destination clock posButton<7>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   -0.651|         |         |         |
-posButton<7>   |    1.283|         |         |         |
+clk            |   -0.017|         |         |         |
+posButton<7>   |    1.540|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<8>
@@ -306,8 +351,8 @@ Clock to Setup on destination clock posButton<8>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   -0.231|         |         |         |
-posButton<8>   |    1.283|         |         |         |
+clk            |   -0.466|         |         |         |
+posButton<8>   |    1.206|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock posButton<9>
@@ -315,19 +360,19 @@ Clock to Setup on destination clock posButton<9>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   -0.395|         |         |         |
-posButton<9>   |    1.288|         |         |         |
+clk            |    0.070|         |         |         |
+posButton<9>   |    1.498|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed May 23 01:56:39 2018 
+Analysis completed Wed May 23 02:57:33 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 279 MB
+Peak Memory Usage: 281 MB
 
 
 

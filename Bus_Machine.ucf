@@ -70,3 +70,19 @@ NET "ledState[3]" LOC = P67;
 NET "ledState[2]" LOC = P74;
 NET "ledState[1]" LOC = P75;
 NET "ledState[0]" LOC = P78;
+
+
+NET "priceseg[6]" LOC = P27;
+NET "priceseg[5]" LOC = P29;
+NET "priceseg[4]" LOC = P32;
+NET "priceseg[3]" LOC = P34;
+NET "priceseg[2]" LOC = P35;
+NET "priceseg[1]" LOC = P40;
+NET "priceseg[0]" LOC = P41;
+NET "pricecom[1]" LOC = P43;
+NET "pricecom[0]" LOC = P44;
+
+NET "button[0]" LOC = P45;
+NET "button[1]" LOC = P46;
+NET "button[2]" LOC = P47;
+NET "button[3]" LOC = P48;
