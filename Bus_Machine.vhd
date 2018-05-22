@@ -39,14 +39,15 @@ entity Bus_Machine is
 		swState : in std_logic_vector(3 downto 0);
 		ledState : out std_logic_vector(3 downto 0);
 		rgbOut : out std_logic_vector(9 downto 0);
+		testRgbTrig : out std_logic;
 		clk : in std_logic
-
+		
 	);
 end Bus_Machine;
 
 architecture Behavioral of Bus_Machine is
 	
-	
+	signal enableeiei : std_logic;
 	signal state : std_logic_vector(3 downto 0) := "0000";
 	signal rgbPos : std_logic_vector(9 downto 0):= "0000000000";
 	signal rgbPos1 : std_logic_vector(10 downto 0):= "00000000000";
@@ -65,7 +66,9 @@ architecture Behavioral of Bus_Machine is
 			rgbCommon : out std_logic_vector(9 downto 0)
 		);
 	end component;
-	signal rgbPosChangedTrigger : std_logic := '0';
+	signal rgbPosTrig : std_logic := '0';
+	signal nextState : std_logic_vector(3 downto 0) := "0000";
+	
 begin
 	--rgbPos <= "0010000100";
 	DisplayLed : Display_LED port map(rgb => rgb,
@@ -74,30 +77,65 @@ begin
 												rgbPos2 => rgbPos2,
 												state => state,
 												clk => clk,
-												rgbPosChangedTrigger => rgbPosChangedTrigger,
+												rgbPosChangedTrigger => rgbPosTrig,
 												rgbCommon => rgbCommon,
 												rgbOut => rgbOut);
-	state <= swState;
+	
 	ledState <= state;
-	State_Machine: process(posButton,state)
-	begin
-		
-		if (state(3) = '0')then
-			if(state(0) = '0')then
-				
-				
---				for i in 0 to 9 loop
---					tmp <= posButton(i);
---					if ( tmp'event and tmp = '0')then
---						rgbPos(i) <= not rgbPos(i);
---					end if;
---					
---				end loop;
+--	state <= swState;
+	rgbPosTrig <= posButton(9) or  posButton(8) or posButton(7) or posButton(6) or posButton(5) or posButton(4) or posButton(3) or  posButton(2) or posButton(1) or posButton(0) ; 
 
-			end if;
-		elsif (state(3) = '1') then
+--	state <= 
+--				"0001" when rgbPos1/="00000000000" and state = "0000"  else
+--				"0010" when rgbPos2/="00000000000" and state = "0001"  else
+--				"0100" when rgbPos="00000000000" and state = "0010"  ;
+	
+	
+--input_process : process(posButton,state) is
+--		begin
+--			
+--			if (posButton(i)'event and posButton(i) = '1') then
+--				if(state = "0000" )then
+--					rgbPos1(i) <= '1';
+--				elsif(state = "0001" ) then
+--					rgbPos2(i) <= '1';				
+--				end if;
+--			end if;	
+--
+--		end process
+
+--	rgbPos1 <= '0'&  when state = "0000" ;
+--
+--	rgbPos2 <= '0'&posButton when state = "0001" ;
+
+	sync_proc : process(clk)
+	begin
+		if (rising_edge(clk))then
+			state <= nextState;
+			
 		end if;
-	end process State_Machine;
+	end process;
+	
+	next_state_proc : process(state,rgbPos1,rgbPos2)
+	begin
+		case (state) is
+			when "0000" =>
+				if (rgbPos1/="00000000000")then
+					nextState <= "0001";
+				else 
+					nextState <= "0000";
+				end if;
+			when "0001" =>
+				if (rgbPos2/="00000000000")then
+					nextState <= "0010";
+					else 
+					nextState <= "0001";
+				end if;
+			
+			when others =>
+				nextState <= state;
+		end case;
+	end process;
 	
 	input_pos : for i in posButton'range generate
 		input_process : process(posButton,state) is
@@ -106,16 +144,14 @@ begin
 			if (posButton(i)'event and posButton(i) = '1') then
 				if(state = "0000" )then
 					rgbPos1(i) <= '1';
-				elsif(state = "0001" and rgbPos(i) = '0') then
+				elsif(state = "0001" and rgbPos1(i)='0' ) then
 					rgbPos2(i) <= '1';
-					
+				
 				end if;
-			end if;
-			
+			end if;	
 
 		end process input_process;
 	end generate;
-	
 	
 end Behavioral;
 

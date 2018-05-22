@@ -1,13 +1,24 @@
 
+##
+#NET "posButton[9]" LOC = P23;
+#NET "posButton[8]" LOC = P21;
+#NET "posButton[7]" LOC = P16;
+#NET "posButton[6]" LOC = P14;
+#NET "posButton[5]" LOC = P11;
+#NET "posButton[4]" LOC = P9;
+#NET "posButton[3]" LOC = P7; 
+#NET "posButton[2]" LOC = P5;
+#NET "posButton[1]" LOC = P24;
+#NET "posButton[0]" LOC = P22;
 
-NET "posButton[9]" LOC = P23;
-NET "posButton[8]" LOC = P21;
-NET "posButton[7]" LOC = P16;
-NET "posButton[6]" LOC = P14;
-NET "posButton[5]" LOC = P11;
-NET "posButton[4]" LOC = P9;
-NET "posButton[3]" LOC = P7; 
-NET "posButton[2]" LOC = P5;
+NET "posButton[9]" LOC = P121;
+NET "posButton[8]" LOC = P120;
+NET "posButton[7]" LOC = P119;
+NET "posButton[6]" LOC = P118;
+NET "posButton[5]" LOC = P117;
+NET "posButton[4]" LOC = P116;
+NET "posButton[3]" LOC = P115; 
+NET "posButton[2]" LOC = P114;
 NET "posButton[1]" LOC = P24;
 NET "posButton[0]" LOC = P22;
 
