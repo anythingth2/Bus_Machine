@@ -55,9 +55,9 @@ NET "rgbOut[6]" LOC = P94;
 NET "rgbOut[7]" LOC = P95;
 
 
-NET "rgb[2]" LOC = P2;
-NET "rgb[1]" LOC = P141;
-NET "rgb[0]" LOC = P143;
+NET "rgb[2]" LOC = P23;
+NET "rgb[1]" LOC = P16;
+NET "rgb[0]" LOC = P21;
 
 NET "clk" LOC = P123;
 
@@ -72,6 +72,17 @@ NET "ledState[1]" LOC = P75;
 NET "ledState[0]" LOC = P78;
 
 
+#NET "priceseg[6]" LOC = P131;
+#NET "priceseg[5]" LOC = P133;
+#NET "priceseg[4]" LOC = P137;
+#NET "priceseg[3]" LOC = P139;
+#NET "priceseg[2]" LOC = P141;
+#NET "priceseg[1]" LOC = P143;
+#NET "priceseg[0]" LOC = P2;
+#
+#NET "pricecom[1]" LOC = P5;
+#NET "pricecom[0]" LOC = P7;
+
 NET "priceseg[6]" LOC = P27;
 NET "priceseg[5]" LOC = P29;
 NET "priceseg[4]" LOC = P32;
@@ -79,10 +90,39 @@ NET "priceseg[3]" LOC = P34;
 NET "priceseg[2]" LOC = P35;
 NET "priceseg[1]" LOC = P40;
 NET "priceseg[0]" LOC = P41;
+
 NET "pricecom[1]" LOC = P43;
 NET "pricecom[0]" LOC = P44;
 
-NET "button[0]" LOC = P45;
-NET "button[1]" LOC = P46;
-NET "button[2]" LOC = P47;
-NET "button[3]" LOC = P48;
+#
+#NET "changeseg[6]" LOC = P27;
+#NET "changeseg[5]" LOC = P29;
+#NET "changeseg[4]" LOC = P32;
+#NET "changeseg[3]" LOC = P34;
+#NET "changeseg[2]" LOC = P35;
+#NET "changeseg[1]" LOC = P40;
+#NET "changeseg[0]" LOC = P41;
+#
+#NET "changeCom[3]" LOC = P30;
+#NET "changeCom[2]" LOC = P33;
+#NET "changeCom[1]" LOC = P43;
+#NET "changeCom[0]" LOC = P44;
+
+
+
+NET "button[0]" LOC = P124;
+NET "button[1]" LOC = P127;
+NET "button[2]" LOC = P132;
+NET "button[3]" LOC = P134;
+
+
+#NET "button[0]" LOC = P45;
+#NET "button[1]" LOC = P46;
+#NET "button[2]" LOC = P47;
+#NET "button[3]" LOC = P48;
+
+NET "selectButton" LOC = P11;
+NET "cancelButton" LOC = P9;
+
+
+

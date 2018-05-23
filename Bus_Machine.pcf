@@ -1,29 +1,23 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed May 23 02:57:21 2018
+// Written by: Map P.20131013 on Wed May 23 13:58:29 2018
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "rgbCommon<0>" LOCATE = SITE "P17" LEVEL 1;
-COMP "rgbCommon<1>" LOCATE = SITE "P15" LEVEL 1;
-COMP "rgbCommon<2>" LOCATE = SITE "P12" LEVEL 1;
-COMP "rgbCommon<3>" LOCATE = SITE "P10" LEVEL 1;
-COMP "rgbCommon<4>" LOCATE = SITE "P8" LEVEL 1;
-COMP "rgbCommon<5>" LOCATE = SITE "P6" LEVEL 1;
 COMP "clk" LOCATE = SITE "P123" LEVEL 1;
 COMP "rgbCommon<6>" LOCATE = SITE "P1" LEVEL 1;
-COMP "rgb<0>" LOCATE = SITE "P143" LEVEL 1;
+COMP "rgb<0>" LOCATE = SITE "P21" LEVEL 1;
 COMP "rgbCommon<7>" LOCATE = SITE "P142" LEVEL 1;
-COMP "rgb<1>" LOCATE = SITE "P141" LEVEL 1;
+COMP "rgb<1>" LOCATE = SITE "P16" LEVEL 1;
+COMP "button<0>" LOCATE = SITE "P124" LEVEL 1;
 COMP "rgbCommon<8>" LOCATE = SITE "P140" LEVEL 1;
-COMP "button<0>" LOCATE = SITE "P45" LEVEL 1;
 COMP "ledState<0>" LOCATE = SITE "P78" LEVEL 1;
-COMP "rgb<2>" LOCATE = SITE "P2" LEVEL 1;
+COMP "rgb<2>" LOCATE = SITE "P23" LEVEL 1;
+COMP "button<1>" LOCATE = SITE "P127" LEVEL 1;
 COMP "rgbCommon<9>" LOCATE = SITE "P138" LEVEL 1;
-COMP "button<1>" LOCATE = SITE "P46" LEVEL 1;
 COMP "ledState<1>" LOCATE = SITE "P75" LEVEL 1;
-COMP "button<2>" LOCATE = SITE "P47" LEVEL 1;
+COMP "button<2>" LOCATE = SITE "P132" LEVEL 1;
 COMP "ledState<2>" LOCATE = SITE "P74" LEVEL 1;
-COMP "button<3>" LOCATE = SITE "P48" LEVEL 1;
+COMP "button<3>" LOCATE = SITE "P134" LEVEL 1;
 COMP "ledState<3>" LOCATE = SITE "P67" LEVEL 1;
 COMP "rgbOut<0>" LOCATE = SITE "P84" LEVEL 1;
 COMP "rgbOut<1>" LOCATE = SITE "P85" LEVEL 1;
@@ -34,6 +28,7 @@ COMP "swState<1>" LOCATE = SITE "P57" LEVEL 1;
 COMP "rgbOut<4>" LOCATE = SITE "P92" LEVEL 1;
 COMP "swState<2>" LOCATE = SITE "P56" LEVEL 1;
 COMP "rgbOut<5>" LOCATE = SITE "P93" LEVEL 1;
+COMP "cancelButton" LOCATE = SITE "P9" LEVEL 1;
 COMP "swState<3>" LOCATE = SITE "P55" LEVEL 1;
 COMP "rgbOut<6>" LOCATE = SITE "P94" LEVEL 1;
 COMP "rgbOut<7>" LOCATE = SITE "P95" LEVEL 1;
@@ -76,5 +71,12 @@ PIN posButton<9>_pin<0> = BEL "posButton<9>" PINNAME PAD;
 PIN "posButton<9>_pin<0>" CLOCK_DEDICATED_ROUTE;
 COMP "priceseg<5>" LOCATE = SITE "P29" LEVEL 1;
 COMP "priceseg<6>" LOCATE = SITE "P27" LEVEL 1;
+COMP "selectButton" LOCATE = SITE "P11" LEVEL 1;
+COMP "rgbCommon<0>" LOCATE = SITE "P17" LEVEL 1;
+COMP "rgbCommon<1>" LOCATE = SITE "P15" LEVEL 1;
+COMP "rgbCommon<2>" LOCATE = SITE "P12" LEVEL 1;
+COMP "rgbCommon<3>" LOCATE = SITE "P10" LEVEL 1;
+COMP "rgbCommon<4>" LOCATE = SITE "P8" LEVEL 1;
+COMP "rgbCommon<5>" LOCATE = SITE "P6" LEVEL 1;
 SCHEMATIC END;
 
